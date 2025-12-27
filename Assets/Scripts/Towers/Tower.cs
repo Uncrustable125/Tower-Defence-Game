@@ -1,5 +1,6 @@
-using TMPro;
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public class Tower : MonoBehaviour
 {
@@ -7,24 +8,35 @@ public class Tower : MonoBehaviour
     public float range;
     public float fireRate;
     public float damage;
-    bool first = true;
+    private float fireCooldown;
+    public bool hasAOE;
+    public float aoeRadius;
+    public bool appliesSlow;
+    [Range(0f, 1f)] public float slowMultiplier; 
+    public float slowDuration;
+    public float projectileSpeed;
+    public float projectileScale;
+    bool isBuffTower;
+    public float buffRange; 
+    public float fireRateMultiplier;
+
+
+    private float baseFireRate;
+    private int buffCount;
+
     [Header("References")]
     public Transform firePoint;
     public GameObject projectilePrefab;
-
-    public SpriteRenderer topSprite, midSprite, botSprite;
+    public SpriteRenderer topSprite, midSprite, midSprite2, botSprite;
 
     [Header("Range Display")]
     [SerializeField] LineRenderer rangeRenderer;
     [SerializeField] int circleSegments = 64;
-
-    private TowerData towerData;
-    private float fireCooldown;
+    [SerializeField] private TowerData towerData;
+    public List<Upgrade> upgrades;
     private bool isSelected;
+    bool first = true;
 
-    // =============================
-    // Public method for selection
-    // =============================
     public void SetSelected(bool selected)
     {
         isSelected = selected;
@@ -32,25 +44,48 @@ public class Tower : MonoBehaviour
             rangeRenderer.enabled = selected;
     }
 
-    // =============================
-    // Initialization
-    // =============================
+
     public void Init(TowerData towerData)
     {
         this.towerData = towerData;
 
+
         range = towerData.range;
-        fireRate = towerData.fireRate;
+        baseFireRate = towerData.fireRate;
+        fireRate = baseFireRate;
         damage = towerData.damage;
+        hasAOE = towerData.hasAOE;
+        aoeRadius = towerData.aoeRadius;
+        appliesSlow = towerData.appliesSlow;
+        slowMultiplier = towerData.slowMultiplier;
+        slowDuration = towerData.slowDuration;
+        projectileSpeed = towerData.projectileSpeed;
+        projectileScale = towerData.projectileScale;
+        isBuffTower = towerData.isBuffTower;
+        buffRange = towerData.buffRange;
+        fireRateMultiplier = towerData.fireRateMultiplier;
+        upgrades = new List<Upgrade>();
+        for (int i = 0; i < towerData.upgrades.Count; i++)
+        {
+            Upgrade u = new Upgrade(towerData.upgrades[i]);
+            upgrades.Add(u);
+        }
+
         topSprite.sprite = towerData.topSprite;
         midSprite.sprite = towerData.midSprite;
+        if (towerData.midSprite2 != null)
+            midSprite2.sprite = towerData.midSprite2;
+        else
+        {
+            //Will Update for taller towers
+            midSprite2.sprite = null;
+            topSprite.transform.localPosition = new Vector2(0, 0.646f);
+        }
         botSprite.sprite = towerData.botSprite;
         SetupRangeRenderer();
+        ApplyBuffAura();
     }
 
-    // =============================
-    // Targeting & Shooting
-    // =============================
     void Update()
     {
         if (first)
@@ -58,12 +93,50 @@ public class Tower : MonoBehaviour
             SetupRangeRenderer();
             first = false;
         }
+        if (isBuffTower)
+        {
+
+            return; // Buff towers do not shoot
+        }
         Enemy target = GetNearestEnemy();
         if (target != null)
         {
            // RotateToward(target);
             TryShoot(target);
         }
+    }
+
+    void ApplyBuffAura()
+    {
+
+        Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
+
+        foreach (Tower x in towers)
+        {
+            if (!x.isBuffTower) continue;
+            foreach (Tower t in towers)
+            {
+                if (t == x) continue;
+                float d = Vector3.Distance(x.transform.position, t.transform.position);
+                if (d <= x.buffRange)
+                    t.RecalculateFireRate(x.fireRateMultiplier);
+            }
+        }
+    }
+    public void ApplyUpgrade(Upgrade upgrade)
+    {
+        for(int i=0; i<upgrades.Count; i++)
+        {
+            if (upgrades[i] == upgrade)
+            {
+                upgrades[i].aquired = true;
+                upgrades[i].available = false;
+            }
+        }
+    }
+    private void RecalculateFireRate(float multiplier)
+    {
+        fireRate = baseFireRate * multiplier;//Mathf.Pow(multiplier, buffCount);
     }
 
     Enemy GetNearestEnemy()
@@ -86,19 +159,14 @@ public class Tower : MonoBehaviour
         return nearest;
     }
 
-   /* void RotateToward(Enemy target)
-    {
-        Vector3 dir = target.transform.position - turretHead.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        turretHead.rotation = Quaternion.Euler(0, 0, angle);
-    }*/
-
     void TryShoot(Enemy target)
     {
+        //Extra checks for safety
+        if (target == null) return;
         fireCooldown -= Time.deltaTime;
-
         if (fireCooldown <= 0f)
         {
+            if (target == null) return;
             Shoot(target);
             fireCooldown = 1f / fireRate;
         }
@@ -111,8 +179,7 @@ public class Tower : MonoBehaviour
             firePoint.position,
             firePoint.rotation
         );
-
-        bullet.GetComponent<Projectile>().Init(target, damage);
+        bullet.GetComponent<Projectile>().Init(target, this);
     }
 
     // =============================

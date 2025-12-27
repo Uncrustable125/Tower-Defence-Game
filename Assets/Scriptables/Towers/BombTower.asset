@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2ddd42db27db84fa65079483f0b64e, type: 3}
+  m_Name: BombTower
+  m_EditorClassIdentifier: Assembly-CSharp::TowerData
+  towerName: Bomb Tower
+  description: 
+  upgrades:
+  - {fileID: 11400000, guid: fb29df3e9c31fd848ba8b7ef44e7c56f, type: 2}
+  - {fileID: 11400000, guid: f5703a9bb3c1c894ab16d6f9dd70ed16, type: 2}
+  - {fileID: 11400000, guid: 2a5b4334b6bbb304c8709eee8e216434, type: 2}
+  range: 5
+  fireRate: 1.5
+  damage: 200
+  projectileSpeed: 15
+  projectileScale: 4
+  cost: 10
+  topSprite: {fileID: -803987272058880475, guid: 6fe17e9fc4d8be1478d1ada83e048964, type: 3}
+  midSprite: {fileID: -6850143148722987975, guid: 037472d062d67c84ba93a7526fbc0c45, type: 3}
+  midSprite2: {fileID: 0}
+  botSprite: {fileID: -2572334522680226361, guid: 193e4a56ea3585a41bb690e9e539c58d, type: 3}
+  Lv2: {fileID: 0}
+  Lv3: {fileID: 0}
+  magicSprite: {fileID: 0}
+  baseSprites:
+  - {fileID: -2572334522680226361, guid: 193e4a56ea3585a41bb690e9e539c58d, type: 3}
+  - {fileID: -6850143148722987975, guid: 037472d062d67c84ba93a7526fbc0c45, type: 3}
+  - {fileID: -803987272058880475, guid: 6fe17e9fc4d8be1478d1ada83e048964, type: 3}
+  towerAnimation: {fileID: 0}
+  hasAOE: 1
+  aoeRadius: 1
+  appliesSlow: 0
+  slowMultiplier: 0
+  slowDuration: 0
+  isBuffTower: 0
+  buffRange: 0
+  fireRateMultiplier: 0

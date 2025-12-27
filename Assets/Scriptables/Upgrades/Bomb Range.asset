@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2121ef984828504a8a44b69ddd2f767, type: 3}
+  m_Name: Bomb Range
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  upgradeName: Bomb Range
+  description: Increase the Range of the Bomb Tower
+  range: 3
+  fireRate: 0
+  damage: 0
+  projectileSpeed: 0
+  projectileScale: 0
+  cost: 100
+  sprite: {fileID: 0}
+  hasAOE: 0
+  aoeRadius: 0
+  appliesSlow: 0
+  slowMultiplier: 0
+  slowDuration: 0
+  isBuffTower: 0
+  buffRange: 0
+  fireRateMultiplier: 0
+  aquired: 0
+  available: 0
+  prerequisites: []

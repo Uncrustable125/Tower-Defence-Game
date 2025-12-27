@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
     private GameObject dragPreview;
     private GameObject towerPrefab;
     private TowerData towerData;
+    [SerializeField] TowerBar towerBar;
     private Sprite dragBase, dragMid, dragTop;
     [Range(0f, 1f)] public float previewAlpha = 0.5f;
 
@@ -28,7 +29,7 @@ public class InputManager : MonoBehaviour
     private void OnDisable() => controls.Gameplay.Disable();
 
     // Called when starting drag from button
-    public void StartTowerDrag(GameObject prefab, TowerData data, params Sprite[] layerSprites)
+    public void StartTowerDrag(GameObject prefab, TowerData data)
     {
         towerPrefab = prefab;
         towerData = data;
@@ -38,7 +39,7 @@ public class InputManager : MonoBehaviour
         // Get the prefab's sprite renderers to read Y offsets
         SpriteRenderer[] prefabLayers = prefab.GetComponentsInChildren<SpriteRenderer>();
 
-        for (int i = 0; i < layerSprites.Length; i++)
+        for (int i = 0; i < data.baseSprites.Length; i++)
         {
             float yOffset = 0f;
 
@@ -48,7 +49,7 @@ public class InputManager : MonoBehaviour
             else
                 yOffset = i * 0.32f; // fallback if prefab has fewer layers
 
-            CreatePreviewLayer(layerSprites[i], i, new Vector2(0, yOffset), dragPreview.transform);
+            CreatePreviewLayer(data.baseSprites[i], i, new Vector2(0, yOffset), dragPreview.transform);
         }
     }
 
@@ -106,6 +107,8 @@ public class InputManager : MonoBehaviour
 
                 selectedTower = tower;
                 selectedTower.SetSelected(true);
+                towerBar.ShowUpgradeMenu(tower);
+
             }
         }
         else
@@ -114,7 +117,9 @@ public class InputManager : MonoBehaviour
             {
                 selectedTower.SetSelected(false);
                 selectedTower = null;
+                towerBar.ShowTowerMenu();
             }
+            
         }
     }
 

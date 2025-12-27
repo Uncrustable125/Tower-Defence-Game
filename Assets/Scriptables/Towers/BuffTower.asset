@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2ddd42db27db84fa65079483f0b64e, type: 3}
+  m_Name: BuffTower
+  m_EditorClassIdentifier: Assembly-CSharp::TowerData
+  towerName: Buff Tower
+  description: 
+  upgrades:
+  - {fileID: 11400000, guid: d0f15f2f0fc9af343a7bbba1948339f1, type: 2}
+  - {fileID: 11400000, guid: 21c77cefdf92c2741aa3e82a06225529, type: 2}
+  - {fileID: 11400000, guid: 4ecb2a53e71d4274fb01d77926fed00c, type: 2}
+  - {fileID: 11400000, guid: 6bdc4bfee942d4a48882f8d37266737b, type: 2}
+  range: 5
+  fireRate: 0
+  damage: 0
+  projectileSpeed: 0
+  projectileScale: 1
+  cost: 10
+  topSprite: {fileID: -4621601770588147206, guid: 2c23d8670ba34be41ac900d9bae122b6, type: 3}
+  midSprite: {fileID: -3331555728741550697, guid: 8949a5d4ad5190248be10f2b72c963c8, type: 3}
+  midSprite2: {fileID: -2870894574463682627, guid: 10d66a0fd0007104a8bf216703ae09db, type: 3}
+  botSprite: {fileID: -2572334522680226361, guid: 0df4c1d7a8065814a8c49737486ef2b9, type: 3}
+  Lv2: {fileID: 0}
+  Lv3: {fileID: 0}
+  magicSprite: {fileID: 0}
+  baseSprites:
+  - {fileID: -2572334522680226361, guid: 0df4c1d7a8065814a8c49737486ef2b9, type: 3}
+  - {fileID: -3331555728741550697, guid: 8949a5d4ad5190248be10f2b72c963c8, type: 3}
+  - {fileID: -2870894574463682627, guid: 10d66a0fd0007104a8bf216703ae09db, type: 3}
+  - {fileID: -4621601770588147206, guid: 2c23d8670ba34be41ac900d9bae122b6, type: 3}
+  towerAnimation: {fileID: 0}
+  hasAOE: 0
+  aoeRadius: 0
+  appliesSlow: 0
+  slowMultiplier: 0
+  slowDuration: 0
+  isBuffTower: 1
+  buffRange: 5
+  fireRateMultiplier: 1.25

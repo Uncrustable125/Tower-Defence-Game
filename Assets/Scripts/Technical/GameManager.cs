@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -5,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public int lives = 20;
     public int money = 300;
-    public TextMeshProUGUI healthText, goldText;
-
+    [SerializeField] TextMeshProUGUI healthText, goldText;
+    [SerializeField] UIManager uiManager;
     public static GameManager Instance;
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateUI();
+        GameOver();
     }
 
     public void PlayerTakeDamage(int amt)
@@ -46,4 +48,10 @@ public class GameManager : MonoBehaviour
         healthText.text = lives.ToString();
         goldText.text = money.ToString();
     }
+    public void GameOver()
+    {
+        uiManager.StartGameOver();
+    }
+
+
 }
