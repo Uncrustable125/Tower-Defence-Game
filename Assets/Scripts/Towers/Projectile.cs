@@ -16,6 +16,7 @@ public class Projectile : MonoBehaviour
     private float slowDuration;
     private bool hasAOE, appliesSlow;
     GameObject temp;
+    Tower tower;
 
     // New init for AOE / slow towers (ice tower)
     public void Init(
@@ -39,7 +40,7 @@ public class Projectile : MonoBehaviour
         this.hasAOE = currentTowerData.hasAOE;
         this.appliesSlow = currentTowerData.appliesSlow;
         transform.localScale = transform.localScale * currentTowerData.projectileScale;
-
+        tower = currentTowerData;
     }
 
     void Update()
@@ -85,7 +86,7 @@ public class Projectile : MonoBehaviour
         enemy.TakeDamage(damage);
 
         if (appliesSlow)
-            enemy.ApplySlow(slowMultiplier, slowDuration);
+            enemy.SetSlow(tower, slowMultiplier, slowDuration);
     }
 
     void ApplyAOE()
@@ -100,7 +101,7 @@ public class Projectile : MonoBehaviour
             enemy.TakeDamage(damage);
 
             if (appliesSlow)
-                enemy.ApplySlow(slowMultiplier, slowDuration);
+                enemy.SetSlow(tower, slowMultiplier, slowDuration);
         }
     }
 }

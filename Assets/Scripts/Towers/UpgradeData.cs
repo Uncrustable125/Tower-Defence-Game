@@ -16,18 +16,21 @@ public class UpgradeData : ScriptableObject
     public Sprite sprite;
 
     [Header("AOE")]
-    public bool hasAOE;
     public float aoeRadius;
 
     [Header("Debuffs")]
-    public bool appliesSlow;
     [Range(0f, 1f)] public float slowMultiplier;
     public float slowDuration;
 
     [Header("Buff (Optional)")]
-    public bool isBuffTower;
     public float buffRange;
     public float fireRateMultiplier;
+
+
+    public OptionalBool hasAOE;
+    public OptionalBool appliesSlow;
+    public OptionalBool isBuffTower;
+
 
     public bool aquired, available;
     public List<UpgradeData> prerequisites;

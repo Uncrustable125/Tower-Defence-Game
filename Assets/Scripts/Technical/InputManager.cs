@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class InputManager : MonoBehaviour
 {
@@ -63,7 +65,7 @@ public class InputManager : MonoBehaviour
         {
             if (GameManager.Instance.money >= towerData.cost)
             {
-                GameManager.Instance.money -= towerData.cost;
+                GameManager.Instance.SpendMoney(towerData.cost);
                 GameObject newTower = Instantiate(towerPrefab, mousePos, Quaternion.identity);
                 newTower.GetComponent<Tower>().Init(towerData);
             }
@@ -91,7 +93,11 @@ public class InputManager : MonoBehaviour
 
     private void OnClick()
     {
-        if (dragPreview != null) return; // Ignore clicks while dragging
+        if (dragPreview != null) return;
+
+        // If clicking UI, do NOT raycast world
+        if (IsPointerOverUI())
+            return;
 
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
@@ -101,14 +107,12 @@ public class InputManager : MonoBehaviour
             Tower tower = hit.collider.GetComponent<Tower>();
             if (tower != null)
             {
-                // Deselect previous
                 if (selectedTower != null && selectedTower != tower)
                     selectedTower.SetSelected(false);
 
                 selectedTower = tower;
                 selectedTower.SetSelected(true);
                 towerBar.ShowUpgradeMenu(tower);
-
             }
         }
         else
@@ -119,11 +123,23 @@ public class InputManager : MonoBehaviour
                 selectedTower = null;
                 towerBar.ShowTowerMenu();
             }
-            
         }
     }
 
- 
+    private bool IsPointerOverUI()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current)
+        {
+            position = Mouse.current.position.ReadValue()
+        };
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+
+        return results.Count > 0;
+    }
+
+
 
     private void CreatePreviewLayer(Sprite sprite, int order, Vector2 offset, Transform parent)
     {

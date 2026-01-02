@@ -21,14 +21,20 @@ MonoBehaviour:
   projectileScale: 0
   cost: 150
   sprite: {fileID: 0}
-  hasAOE: 1
   aoeRadius: 3
-  appliesSlow: 0
   slowMultiplier: 0
   slowDuration: 0
-  isBuffTower: 0
   buffRange: 0
   fireRateMultiplier: 0
+  hasAOE:
+    willOverrideBoolValue: 1
+    onForTrue: 1
+  appliesSlow:
+    willOverrideBoolValue: 0
+    onForTrue: 0
+  isBuffTower:
+    willOverrideBoolValue: 0
+    onForTrue: 0
   aquired: 0
   available: 0
   prerequisites: []

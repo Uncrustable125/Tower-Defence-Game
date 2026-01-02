@@ -45,4 +45,4 @@ MonoBehaviour:
   slowDuration: 0
   isBuffTower: 1
   buffRange: 5
-  fireRateMultiplier: 1.25
+  fireRateMultiplier: 2

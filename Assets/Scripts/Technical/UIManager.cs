@@ -10,16 +10,19 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI gameOverText;
     [SerializeField] CanvasGroup gameOverCanvasGroup;
     public Vector2 targetSize = new Vector2(600, 400);
-    public float popDuration = 0.3f;    // Very quick for snappy effect
-    public float overshootMultiplier = 1.2f; // How much it overshoots
+    public float popDuration = 0.3f;
+    public float overshootMultiplier = 1.2f;
+
+    [Header("Button Settings")]
+    [SerializeField] Button retryButton;
+    [SerializeField] Vector2 retryButtonSize = new Vector2(200, 60);
 
     [Header("Fade Settings")]
     public float textFadeDuration = 1f;
     public float canvasFadeDuration = 1f;
 
-    /// <summary>
-    /// Starts the Game Over sequence
-    /// </summary>
+
+
     public void StartGameOver()
     {
         StartCoroutine(GameOverSequence());
@@ -27,49 +30,63 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator GameOverSequence()
     {
-        // Reset panel to zero size
+        gameOverCanvasGroup.gameObject.SetActive(true);
+        gameOverText.gameObject.SetActive(true);
+        retryButton.gameObject.SetActive(true);
+        
+            
         panel.sizeDelta = Vector2.zero;
+        retryButton.gameObject.SetActive(false);
 
-        // Pop panel in with overshoot
-        yield return StartCoroutine(PopInPanel(targetSize, popDuration, overshootMultiplier));
+        yield return StartCoroutine(
+            PopInRect(panel, targetSize, popDuration, overshootMultiplier)
+        );
 
-        // Fade in text
         yield return StartCoroutine(FadeInText(textFadeDuration));
 
-        // Fade in the canvas group (optional extra elements)
-       // yield return StartCoroutine(FadeInCanvasGroup(canvasFadeDuration));
+        retryButton.gameObject.SetActive(true);
+        yield return StartCoroutine(
+            PopInRect(
+                retryButton.GetComponent<RectTransform>(),
+                retryButtonSize,
+                0.25f,
+                1.15f
+            )
+        );
     }
 
     /// <summary>
-    /// Animates the panel popping in with overshoot
+    /// Generic pop-in animation for any RectTransform
     /// </summary>
-    private IEnumerator PopInPanel(Vector2 target, float duration, float overshoot)
+    private IEnumerator PopInRect(RectTransform rect, Vector2 targetSize, float duration, float overshoot)
     {
-        Vector2 start = Vector2.zero;
-        Vector2 overshootSize = target * overshoot;
+        rect.sizeDelta = Vector2.zero;
+
+        Vector2 overshootSize = targetSize * overshoot;
         float halfDuration = duration / 2f;
         float elapsed = 0f;
 
-        // Scale up to overshoot
+        // Grow to overshoot
         while (elapsed < halfDuration)
         {
             elapsed += Time.deltaTime;
             float t = elapsed / halfDuration;
-            panel.sizeDelta = Vector2.Lerp(start, overshootSize, t);
+            rect.sizeDelta = Vector2.Lerp(Vector2.zero, overshootSize, t);
             yield return null;
         }
 
-        // Scale down to final size
         elapsed = 0f;
+
+        // Settle back to final size
         while (elapsed < halfDuration)
         {
             elapsed += Time.deltaTime;
             float t = elapsed / halfDuration;
-            panel.sizeDelta = Vector2.Lerp(overshootSize, target, t);
+            rect.sizeDelta = Vector2.Lerp(overshootSize, targetSize, t);
             yield return null;
         }
 
-        panel.sizeDelta = target; // Ensure exact final size
+        rect.sizeDelta = targetSize;
     }
 
     private IEnumerator FadeInText(float duration)

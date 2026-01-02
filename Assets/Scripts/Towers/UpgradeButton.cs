@@ -6,21 +6,26 @@ public class UpgradeButton : MonoBehaviour
 {
     public Tower currentTower;
     Sprite sprite;
-    [SerializeField] Upgrade upgrade;
-
+    Upgrade upgrade;
+    Image img;
+    TMP_Text buttonText;
     public void InitUpgradeButton(Tower tower, Upgrade upgrade)
     {
-        Image img = GetComponent<Image>();
-        TMP_Text buttonText = GetComponentInChildren<TMP_Text>();
+        img = GetComponent<Image>();
+        buttonText = GetComponentInChildren<TMP_Text>();
         currentTower = tower;
+        UpdateButton(upgrade);
+    }
+    void UpdateButton(Upgrade upgrade)
+    {
         if (upgrade != null)
         {
             this.upgrade = upgrade;
             // img.sprite = combinedSprite;
             img.preserveAspect = true;
             buttonText.text = upgrade.upgradeName;
-            Color c = img.color;        
-            c.a = 1f;  
+            Color c = img.color;
+            c.a = 1f;
             img.color = c;
         }
         else
@@ -30,12 +35,23 @@ public class UpgradeButton : MonoBehaviour
             img.color = c;
             buttonText.text = "";
         }
-
     }
-
-    public void buyUpgrade()
+    public void BuyUpgrade()
     {
-        currentTower.ApplyUpgrade(upgrade);
+        if (upgrade == null)
+            return;
+        else if (GameManager.Instance.money >= upgrade.cost)
+        {
+            currentTower.ApplyUpgrade(upgrade);
+            GameManager.Instance.SpendMoney(upgrade.cost);
+            upgrade = null;
+            UpdateButton(upgrade);
+        }
+        else
+        {
+            //Not enough money
+        }
+
     }
 
 

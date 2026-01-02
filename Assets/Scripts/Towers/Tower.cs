@@ -1,28 +1,28 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-
+[RequireComponent(typeof(LineRenderer))]
 public class Tower : MonoBehaviour
 {
     [Header("Stats")]
     public float range;
     public float fireRate;
-    public float damage;
     private float fireCooldown;
+    public float damage;
+
     public bool hasAOE;
     public float aoeRadius;
-    public bool appliesSlow;
-    [Range(0f, 1f)] public float slowMultiplier; 
-    public float slowDuration;
-    public float projectileSpeed;
-    public float projectileScale;
-    bool isBuffTower;
-    public float buffRange; 
-    public float fireRateMultiplier;
 
+    public bool appliesSlow;
+    [Range(0f, 1f)] public float slowMultiplier;
+    public float slowDuration;
+
+    public bool isBuffTower;
+    public float buffRange;
+    public float fireRateMultiplier;
+    public float projectileScale;
 
     private float baseFireRate;
-    private int buffCount;
 
     [Header("References")]
     public Transform firePoint;
@@ -32,11 +32,21 @@ public class Tower : MonoBehaviour
     [Header("Range Display")]
     [SerializeField] LineRenderer rangeRenderer;
     [SerializeField] int circleSegments = 64;
+
     [SerializeField] private TowerData towerData;
     public List<Upgrade> upgrades;
-    private bool isSelected;
-    bool first = true;
 
+    private bool isSelected;
+    private bool first = true;
+
+    // =============================
+    // Slow aura tracking
+    // =============================
+    private HashSet<Enemy> auraSlowedEnemies = new HashSet<Enemy>();
+
+    // -----------------------------
+    // Selection
+    // -----------------------------
     public void SetSelected(bool selected)
     {
         isSelected = selected;
@@ -44,48 +54,51 @@ public class Tower : MonoBehaviour
             rangeRenderer.enabled = selected;
     }
 
-
+    // -----------------------------
+    // Initialization
+    // -----------------------------
     public void Init(TowerData towerData)
     {
         this.towerData = towerData;
-
 
         range = towerData.range;
         baseFireRate = towerData.fireRate;
         fireRate = baseFireRate;
         damage = towerData.damage;
+
         hasAOE = towerData.hasAOE;
         aoeRadius = towerData.aoeRadius;
+
         appliesSlow = towerData.appliesSlow;
         slowMultiplier = towerData.slowMultiplier;
         slowDuration = towerData.slowDuration;
-        projectileSpeed = towerData.projectileSpeed;
-        projectileScale = towerData.projectileScale;
+
         isBuffTower = towerData.isBuffTower;
         buffRange = towerData.buffRange;
         fireRateMultiplier = towerData.fireRateMultiplier;
+        projectileScale = towerData.projectileScale;
+
         upgrades = new List<Upgrade>();
         for (int i = 0; i < towerData.upgrades.Count; i++)
-        {
-            Upgrade u = new Upgrade(towerData.upgrades[i]);
-            upgrades.Add(u);
-        }
-
+            upgrades.Add(new Upgrade(towerData.upgrades[i]));
         topSprite.sprite = towerData.topSprite;
         midSprite.sprite = towerData.midSprite;
-        if (towerData.midSprite2 != null)
-            midSprite2.sprite = towerData.midSprite2;
-        else
-        {
-            //Will Update for taller towers
-            midSprite2.sprite = null;
-            topSprite.transform.localPosition = new Vector2(0, 0.646f);
-        }
+        midSprite2.sprite = towerData.midSprite2;
         botSprite.sprite = towerData.botSprite;
+
+        // Adjust positions if midSprite2 is missing
+        if (midSprite2.sprite == null)
+        {
+            topSprite.transform.localPosition = midSprite2.transform.localPosition;
+        }
+
+
         SetupRangeRenderer();
-        ApplyBuffAura();
     }
 
+    // -----------------------------
+    // Update
+    // -----------------------------
     void Update()
     {
         if (first)
@@ -93,65 +106,91 @@ public class Tower : MonoBehaviour
             SetupRangeRenderer();
             first = false;
         }
+
         if (isBuffTower)
         {
-
-            return; // Buff towers do not shoot
+            ApplySlowAura();
+            ApplyBuffAura();
+            return;
         }
+
         Enemy target = GetNearestEnemy();
         if (target != null)
-        {
-           // RotateToward(target);
             TryShoot(target);
+    }
+
+    // =============================
+    // Slow Aura Logic (Buff Towers)
+    // =============================
+    void ApplySlowAura()
+    {
+        if (!appliesSlow) return;
+
+        Enemy[] enemies = Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+
+        // Remove enemies that left range
+        foreach (Enemy e in new List<Enemy>(auraSlowedEnemies))
+        {
+            if (e == null || e.IsDead ||
+                Vector3.Distance(transform.position, e.transform.position) > range)
+            {
+                e.RemoveSlow(this);
+                auraSlowedEnemies.Remove(e);
+            }
+        }
+
+        // Apply slow to enemies in range
+        foreach (Enemy e in enemies)
+        {
+            if (e.IsDead) continue;
+
+            float dist = Vector3.Distance(transform.position, e.transform.position);
+            if (dist <= range && !auraSlowedEnemies.Contains(e))
+            {
+                e.SetSlow(this, slowMultiplier); // no duration
+                auraSlowedEnemies.Add(e);
+            }
         }
     }
 
+    // =============================
+    // Buff Aura (Fire Rate)
+    // =============================
     void ApplyBuffAura()
     {
+        Tower[] towers = Object.FindObjectsByType<Tower>(FindObjectsSortMode.None);
 
-        Tower[] towers = FindObjectsByType<Tower>(FindObjectsSortMode.None);
-
-        foreach (Tower x in towers)
+        foreach (Tower source in towers)
         {
-            if (!x.isBuffTower) continue;
+            if (!source.isBuffTower) continue;
+
             foreach (Tower t in towers)
             {
-                if (t == x) continue;
-                float d = Vector3.Distance(x.transform.position, t.transform.position);
-                if (d <= x.buffRange)
-                    t.RecalculateFireRate(x.fireRateMultiplier);
+                if (t == source) continue;
+
+                float d = Vector3.Distance(source.transform.position, t.transform.position);
+                if (d <= source.buffRange)
+                    t.RecalculateFireRate(source.fireRateMultiplier);
             }
         }
-    }
-    public void ApplyUpgrade(Upgrade upgrade)
-    {
-        for(int i=0; i<upgrades.Count; i++)
-        {
-            if (upgrades[i] == upgrade)
-            {
-                upgrades[i].aquired = true;
-                upgrades[i].available = false;
-            }
-        }
-    }
-    private void RecalculateFireRate(float multiplier)
-    {
-        fireRate = baseFireRate * multiplier;//Mathf.Pow(multiplier, buffCount);
     }
 
+    // -----------------------------
+    // Shooting
+    // -----------------------------
     Enemy GetNearestEnemy()
     {
         Enemy[] enemies = Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None);
 
         Enemy nearest = null;
-        float shortestDist = Mathf.Infinity;
+        float shortest = Mathf.Infinity;
 
         foreach (Enemy e in enemies)
         {
             float d = Vector3.Distance(transform.position, e.transform.position);
-            if (d < shortestDist && d <= range)
+            if (d <= range && d < shortest)
             {
-                shortestDist = d;
+                shortest = d;
                 nearest = e;
             }
         }
@@ -161,12 +200,9 @@ public class Tower : MonoBehaviour
 
     void TryShoot(Enemy target)
     {
-        //Extra checks for safety
-        if (target == null) return;
         fireCooldown -= Time.deltaTime;
         if (fireCooldown <= 0f)
         {
-            if (target == null) return;
             Shoot(target);
             fireCooldown = 1f / fireRate;
         }
@@ -179,27 +215,49 @@ public class Tower : MonoBehaviour
             firePoint.position,
             firePoint.rotation
         );
+
         bullet.GetComponent<Projectile>().Init(target, this);
     }
 
-    // =============================
+    private void RecalculateFireRate(float multiplier)
+    {
+        fireRate = baseFireRate * multiplier;
+    }
+
+    // -----------------------------
+    // Upgrades
+    // -----------------------------
+    public void ApplyUpgrade(Upgrade upgrade)
+    {
+        upgrade.aquired = true;
+        upgrade.available = false;
+
+        range += upgrade.range;
+        fireRate += upgrade.fireRate;
+        damage += upgrade.damage;
+        aoeRadius += upgrade.aoeRadius;
+        slowMultiplier += upgrade.slowMultiplier;
+        fireRateMultiplier += upgrade.fireRateMultiplier;
+        buffRange += upgrade.buffRange;
+
+        if (upgrade.hasAOE.willOverrideBoolValue) hasAOE = upgrade.hasAOE.onForTrue;
+        if (upgrade.appliesSlow.willOverrideBoolValue) appliesSlow = upgrade.appliesSlow.onForTrue;
+        if (upgrade.isBuffTower.willOverrideBoolValue) isBuffTower = upgrade.isBuffTower.onForTrue;
+    }
+
+    // -----------------------------
     // Range Visualization
-    // =============================
+    // -----------------------------
     void SetupRangeRenderer()
     {
-        if (rangeRenderer == null)
-            return;
+        if (rangeRenderer == null) return;
 
         rangeRenderer.positionCount = circleSegments + 1;
         rangeRenderer.loop = true;
-
-        // Use world space for simplicity
         rangeRenderer.useWorldSpace = true;
-
         rangeRenderer.startWidth = 0.05f;
         rangeRenderer.endWidth = 0.05f;
 
-        // Assign material if not assigned
         if (rangeRenderer.material == null)
             rangeRenderer.material = new Material(Shader.Find("Sprites/Default"));
 
@@ -207,27 +265,22 @@ public class Tower : MonoBehaviour
         rangeRenderer.endColor = Color.green;
 
         DrawRangeCircle();
-
-        rangeRenderer.enabled = false; // will toggle via SetSelected
+        rangeRenderer.enabled = false;
     }
 
-    void DrawRangeCircle() //ON UPGRADE TO TOWER RE-CALL
+    void DrawRangeCircle()
     {
-        float angleStep = 360f / circleSegments;
+        float step = 360f / circleSegments;
 
         for (int i = 0; i <= circleSegments; i++)
         {
-            float angle = Mathf.Deg2Rad * angleStep * i;
+            float angle = Mathf.Deg2Rad * step * i;
             Vector3 pos = transform.position + new Vector3(
                 Mathf.Cos(angle) * range,
                 Mathf.Sin(angle) * range,
                 0f
             );
-
             rangeRenderer.SetPosition(i, pos);
         }
     }
-
-
-
 }

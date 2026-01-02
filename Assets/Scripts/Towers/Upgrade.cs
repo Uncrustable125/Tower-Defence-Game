@@ -4,29 +4,31 @@ public class Upgrade
 {
     public string upgradeName, description;
     [Header("Stats")]
-    public float range = 5f;
-    public float fireRate = 1f;
-    public float damage = 10f;
-    public float projectileSpeed = 15f;
+    public float range;
+    public float fireRate;
+    public float damage;
+    public float projectileSpeed;
     public float projectileScale;
 
     [Header("Cost & Visuals")]
-    public int cost = 10;
+    public int cost;
     public Sprite sprite;
 
     [Header("AOE")]
-    public bool hasAOE;
     public float aoeRadius;
 
     [Header("Debuffs")]
-    public bool appliesSlow;
     [Range(0f, 1f)] public float slowMultiplier;
     public float slowDuration;
 
     [Header("Buff (Optional)")]
-    public bool isBuffTower;
     public float buffRange;
     public float fireRateMultiplier;
+
+
+    public OptionalBool hasAOE;
+    public OptionalBool appliesSlow;
+    public OptionalBool isBuffTower;
 
     public bool aquired, available;
     public List<UpgradeData> prerequisites;

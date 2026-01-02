@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int lives = 20;
-    public int money = 300;
+    public int lives, money;
     [SerializeField] TextMeshProUGUI healthText, goldText;
     [SerializeField] UIManager uiManager;
     public static GameManager Instance;
@@ -19,7 +18,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateUI();
-        GameOver();
     }
 
     public void PlayerTakeDamage(int amt)

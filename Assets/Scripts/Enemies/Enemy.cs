@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,13 +16,97 @@ public class Enemy : MonoBehaviour
     public bool IsDead { get; private set; }
 
     private float baseSpeed;
-    private float slowTimer;
     private float slowMultiplier = 1f;
+
+    // ===========================
+    // Slow System
+    // ===========================
+
+    private const float MAX_SLOW = 0.8f; // 80% max slow
+
+    private class ActiveSlow
+    {
+        public float multiplier;
+        public Coroutine coroutine;
+    }
+
+    private Dictionary<object, ActiveSlow> activeSlows = new();
 
     void Start()
     {
         baseSpeed = speed;
     }
+
+    // ---------------------------
+    // Slow API (used by towers / projectiles)
+    // ---------------------------
+
+    public void SetSlow(object source, float multiplier, float? duration = null)
+    {
+        if (IsDead) return;
+
+        // If this source already applied a slow, refresh duration only
+        if (activeSlows.TryGetValue(source, out ActiveSlow existing))
+        {
+            if (existing.coroutine != null)
+                StopCoroutine(existing.coroutine);
+
+            if (duration.HasValue)
+                existing.coroutine = StartCoroutine(RemoveSlowAfter(source, duration.Value));
+
+            return;
+        }
+
+        // Add new slow
+        ActiveSlow slow = new ActiveSlow
+        {
+            multiplier = multiplier
+        };
+
+        activeSlows[source] = slow;
+        RecalculateSlow();
+
+        if (duration.HasValue)
+            slow.coroutine = StartCoroutine(RemoveSlowAfter(source, duration.Value));
+    }
+
+    public void RemoveSlow(object source)
+    {
+        if (!activeSlows.TryGetValue(source, out ActiveSlow slow))
+            return;
+
+        if (slow.coroutine != null)
+            StopCoroutine(slow.coroutine);
+
+        activeSlows.Remove(source);
+        RecalculateSlow();
+    }
+
+    private IEnumerator RemoveSlowAfter(object source, float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        RemoveSlow(source);
+    }
+
+    private void RecalculateSlow()
+    {
+        float combined = 1f;
+
+        foreach (var slow in activeSlows.Values)
+        {
+            combined *= (1f - slow.multiplier);
+        }
+
+        // Apply cap
+        float appliedSlow = 1f - combined;
+        appliedSlow = Mathf.Min(appliedSlow, MAX_SLOW);
+
+        slowMultiplier = 1f - appliedSlow;
+    }
+
+    // ===========================
+    // Movement
+    // ===========================
 
     public void Init(SplinePath spline, GameManager gameManager)
     {
@@ -31,26 +117,9 @@ public class Enemy : MonoBehaviour
         transform.position = path.points[0].position;
     }
 
-    public void ApplySlow(float multiplier, float duration)
-    {
-        if (IsDead) return;
-
-        slowMultiplier = Mathf.Min(slowMultiplier, multiplier);
-        slowTimer = Mathf.Max(slowTimer, duration);
-    }
-
     void Update()
     {
         if (IsDead) return;
-
-        // Handle slow decay
-        if (slowTimer > 0f)
-        {
-            slowTimer -= Time.deltaTime;
-            if (slowTimer <= 0f)
-                slowMultiplier = 1f;
-        }
-
         MoveAlongSpline();
     }
 
@@ -84,16 +153,20 @@ public class Enemy : MonoBehaviour
         transform.position = path.GetPoint(currentSegment, t);
     }
 
+    // ===========================
+    // Damage
+    // ===========================
+
     public void TakeDamage(float dmg)
     {
         if (IsDead) return;
 
         health -= dmg;
-        if (health <= 0)
+        if (health <= 0f)
             Die();
     }
 
-    void Die()
+    private void Die()
     {
         if (IsDead) return;
 
