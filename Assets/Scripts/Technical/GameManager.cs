@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI healthText, goldText;
     [SerializeField] UIManager uiManager;
     public static GameManager Instance;
+    bool gameover = false;
     private void Awake()
     {
         if (Instance == null)
@@ -18,6 +20,14 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateUI();
+    }
+    private void Update()
+    {
+        if(lives <= 0 && !gameover)
+        {
+            gameover = true;
+            GameOver();
+        }
     }
 
     public void PlayerTakeDamage(int amt)
@@ -51,5 +61,11 @@ public class GameManager : MonoBehaviour
         uiManager.StartGameOver();
     }
 
-
+    public void RestartScene()
+    {
+        // Get current active scene
+        Scene currentScene = SceneManager.GetActiveScene();
+        // Reload it
+        SceneManager.LoadScene(currentScene.name);
+    }
 }

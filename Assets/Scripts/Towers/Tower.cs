@@ -1,5 +1,6 @@
-using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
 public class Tower : MonoBehaviour
@@ -38,6 +39,9 @@ public class Tower : MonoBehaviour
 
     private bool isSelected;
     private bool first = true;
+
+    private const float MAX_FIRERATE_BONUS = 2.0F; // 200% max BUFF 300% FR total
+
 
     // =============================
     // Slow aura tracking
@@ -101,19 +105,12 @@ public class Tower : MonoBehaviour
     // -----------------------------
     void Update()
     {
-        if (first)
-        {
-            SetupRangeRenderer();
-            first = false;
-        }
-
         if (isBuffTower)
         {
             ApplySlowAura();
             ApplyBuffAura();
             return;
         }
-
         Enemy target = GetNearestEnemy();
         if (target != null)
             TryShoot(target);
@@ -164,16 +161,91 @@ public class Tower : MonoBehaviour
         {
             if (!source.isBuffTower) continue;
 
-            foreach (Tower t in towers)
+            foreach (Tower recipient in towers)
             {
-                if (t == source) continue;
+                if (recipient == source) continue;
 
-                float d = Vector3.Distance(source.transform.position, t.transform.position);
+                float d = Vector2.Distance(
+                    source.transform.position,
+                    recipient.transform.position
+                );
+
                 if (d <= source.buffRange)
-                    t.RecalculateFireRate(source.fireRateMultiplier);
+                    recipient.SetBuff(source, 0.25f); // must be > refresh interval
             }
         }
     }
+
+
+    private class ActiveBuff
+    {
+        public Tower source;
+        public Coroutine coroutine;
+    }
+
+    private Dictionary<object, ActiveBuff> activeBuffs = new();
+
+    // ---------------------------
+    // Buff API (used by towers / projectiles)
+    // ---------------------------
+
+    public void SetBuff(Tower source, float duration)
+    {
+        if (activeBuffs.TryGetValue(source, out ActiveBuff existing))
+        {
+            if (existing.coroutine != null)
+                StopCoroutine(existing.coroutine);
+
+            existing.coroutine = StartCoroutine(RemoveBuffAfter(source, duration));
+            RecalculateFireRate();
+            return;
+        }
+
+        ActiveBuff buff = new ActiveBuff
+        {
+            source = source
+        };
+
+        activeBuffs[source] = buff;
+        RecalculateFireRate();
+        buff.coroutine = StartCoroutine(RemoveBuffAfter(source, duration));
+    }
+
+    public void RemoveBuff(object source)
+    {
+        if (!activeBuffs.TryGetValue(source, out ActiveBuff slow))
+            return;
+
+        if (slow.coroutine != null)
+            StopCoroutine(slow.coroutine);
+
+        activeBuffs.Remove(source);
+        RecalculateFireRate();
+    }
+
+    private IEnumerator RemoveBuffAfter(object source, float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        RemoveBuff(source);
+    }
+    private void RecalculateFireRate()
+    {
+        float combined = 1f;
+
+        foreach (var buff in activeBuffs.Values)
+        {
+            // Pull CURRENT value from the source tower
+            combined *= (1f + buff.source.fireRateMultiplier);
+        }
+
+        float totalBonus = combined - 1f;
+        totalBonus = Mathf.Min(totalBonus, MAX_FIRERATE_BONUS);
+
+        fireRateMultiplier = 1f + totalBonus;
+        fireRate = baseFireRate * fireRateMultiplier;
+    }
+
+
 
     // -----------------------------
     // Shooting
@@ -219,11 +291,6 @@ public class Tower : MonoBehaviour
         bullet.GetComponent<Projectile>().Init(target, this);
     }
 
-    private void RecalculateFireRate(float multiplier)
-    {
-        fireRate = baseFireRate * multiplier;
-    }
-
     // -----------------------------
     // Upgrades
     // -----------------------------
@@ -243,6 +310,8 @@ public class Tower : MonoBehaviour
         if (upgrade.hasAOE.willOverrideBoolValue) hasAOE = upgrade.hasAOE.onForTrue;
         if (upgrade.appliesSlow.willOverrideBoolValue) appliesSlow = upgrade.appliesSlow.onForTrue;
         if (upgrade.isBuffTower.willOverrideBoolValue) isBuffTower = upgrade.isBuffTower.onForTrue;
+        DrawRangeCircle();
+        ApplyBuffAura();
     }
 
     // -----------------------------
@@ -254,7 +323,7 @@ public class Tower : MonoBehaviour
 
         rangeRenderer.positionCount = circleSegments + 1;
         rangeRenderer.loop = true;
-        rangeRenderer.useWorldSpace = true;
+        rangeRenderer.useWorldSpace = false;
         rangeRenderer.startWidth = 0.05f;
         rangeRenderer.endWidth = 0.05f;
 
@@ -270,17 +339,25 @@ public class Tower : MonoBehaviour
 
     void DrawRangeCircle()
     {
-        float step = 360f / circleSegments;
+        if (!rangeRenderer) return;
 
-        for (int i = 0; i <= circleSegments; i++)
+        int points = circleSegments + 1;
+        rangeRenderer.positionCount = points;
+
+        float step = 2f * Mathf.PI / circleSegments;
+
+        for (int i = 0; i < points; i++)
         {
-            float angle = Mathf.Deg2Rad * step * i;
-            Vector3 pos = transform.position + new Vector3(
+            float angle = step * i;
+            Vector3 pos = new Vector3(
                 Mathf.Cos(angle) * range,
                 Mathf.Sin(angle) * range,
                 0f
             );
+
             rangeRenderer.SetPosition(i, pos);
         }
     }
+
+
 }

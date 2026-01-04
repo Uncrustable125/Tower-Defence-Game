@@ -4103,8 +4103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb8d075e303c694db9bd28608ac3616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  lives: 20
-  money: 300
+  lives: 1
+  money: 30000000
   healthText: {fileID: 457464662}
   goldText: {fileID: 309942316}
   uiManager: {fileID: 411527644}
@@ -6070,7 +6070,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1393730250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 811183135}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RestartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1393730250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6486,7 +6498,7 @@ MonoBehaviour:
   splinePath: {fileID: 1596383119}
   gameManager: {fileID: 811183135}
   timeBetweenWaves: 2
-  timeBetweenEnemies: 0.0001
+  timeBetweenEnemies: 0.5
 --- !u!4 &1458870057
 Transform:
   m_ObjectHideFlags: 0

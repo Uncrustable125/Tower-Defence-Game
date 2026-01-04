@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     private Enemy target;
     private Transform targetTransform, lastTransform;
     private Enemy targetEnemy;
-
+    private Vector3 lastPosition;
     private float damage;
 
     // AOE + Slow
@@ -19,8 +19,7 @@ public class Projectile : MonoBehaviour
     Tower tower;
 
     // New init for AOE / slow towers (ice tower)
-    public void Init(
-        Enemy target, Tower currentTowerData)
+    public void Init(Enemy target, Tower currentTowerData)
     {
         if (target == null)
         {
@@ -28,31 +27,33 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        this.target = target;
-        targetTransform = target.transform;
-        targetEnemy = target;
-        temp = new GameObject("TempTransform");
-        lastTransform = temp.transform;
+        this.targetEnemy = target;
+        this.targetTransform = target.transform;
+        this.lastPosition = target.transform.position; // store initial target pos
+
         this.damage = currentTowerData.damage;
         this.aoeRadius = currentTowerData.aoeRadius;
         this.slowMultiplier = currentTowerData.slowMultiplier;
         this.slowDuration = currentTowerData.slowDuration;
         this.hasAOE = currentTowerData.hasAOE;
         this.appliesSlow = currentTowerData.appliesSlow;
-        transform.localScale = transform.localScale * currentTowerData.projectileScale;
         tower = currentTowerData;
+
+        transform.localScale *= currentTowerData.projectileScale;
+
+        // Rotate projectile to face target immediately (2D)
+        Vector3 dir = (targetTransform.position - transform.position).normalized;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle - 90f); // depends on sprite orientation
     }
+
 
     void Update()
     {
-        if (targetTransform == null || targetEnemy == null || targetEnemy.IsDead)
-        {
-            targetTransform = lastTransform;
-          //  Destroy(gameObject);
-           // return;
-        }
-        lastTransform.position = targetTransform.position;
-        Vector3 dir = targetTransform.position - transform.position;
+        if (targetTransform != null && !targetEnemy.IsDead)
+            lastPosition = targetTransform.position; // keep last valid pos
+
+        Vector3 dir = lastPosition - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
         if (dir.magnitude <= distanceThisFrame)
@@ -63,6 +64,7 @@ public class Projectile : MonoBehaviour
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
     }
+
 
     void HitTarget()
     {
