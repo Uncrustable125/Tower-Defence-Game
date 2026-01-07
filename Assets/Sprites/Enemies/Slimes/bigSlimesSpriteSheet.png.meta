@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: 555fb3adb5a91994c88ab6d7a99797be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8919299036978071004
+    second: bigSlimesSpriteSheet_0
+  - first:
+      213: -4839988379279756167
+    second: bigSlimesSpriteSheet_1
+  - first:
+      213: 2486341268082986465
+    second: bigSlimesSpriteSheet_2
+  - first:
+      213: 1781589789572410292
+    second: bigSlimesSpriteSheet_3
+  - first:
+      213: 6817595270280602348
+    second: bigSlimesSpriteSheet_4
+  - first:
+      213: 4151871939088161020
+    second: bigSlimesSpriteSheet_5
+  - first:
+      213: 3159018139473980295
+    second: bigSlimesSpriteSheet_6
+  - first:
+      213: 8065528930483937765
+    second: bigSlimesSpriteSheet_7
+  - first:
+      213: 3057776495224518404
+    second: bigSlimesSpriteSheet_8
+  - first:
+      213: 546534733631999326
+    second: bigSlimesSpriteSheet_9
+  - first:
+      213: -6351837531463898914
+    second: bigSlimesSpriteSheet_10
+  - first:
+      213: -2441423519594483635
+    second: bigSlimesSpriteSheet_11
+  - first:
+      213: -5694412734876651812
+    second: bigSlimesSpriteSheet_12
+  - first:
+      213: 3439761857196916031
+    second: bigSlimesSpriteSheet_13
+  - first:
+      213: 7936815047033104339
+    second: bigSlimesSpriteSheet_14
+  - first:
+      213: -7241366252610294466
+    second: bigSlimesSpriteSheet_15
+  - first:
+      213: -709888013055877938
+    second: bigSlimesSpriteSheet_16
+  - first:
+      213: 2530777733019842516
+    second: bigSlimesSpriteSheet_17
+  - first:
+      213: 7617077410774844149
+    second: bigSlimesSpriteSheet_18
+  - first:
+      213: -4423647876239967696
+    second: bigSlimesSpriteSheet_19
+  - first:
+      213: -3158446918467352038
+    second: bigSlimesSpriteSheet_20
+  - first:
+      213: -6937885389360503128
+    second: bigSlimesSpriteSheet_21
+  - first:
+      213: -5256620006297433244
+    second: bigSlimesSpriteSheet_22
+  - first:
+      213: -9026516568419475563
+    second: bigSlimesSpriteSheet_23
+  - first:
+      213: 7724204985697925248
+    second: bigSlimesSpriteSheet_24
+  - first:
+      213: 4452470436716595108
+    second: bigSlimesSpriteSheet_25
+  - first:
+      213: 4445784716427875781
+    second: bigSlimesSpriteSheet_26
+  - first:
+      213: 8480784968366385348
+    second: bigSlimesSpriteSheet_27
+  - first:
+      213: 4842456889634200798
+    second: bigSlimesSpriteSheet_28
+  - first:
+      213: -7919345929421762716
+    second: bigSlimesSpriteSheet_29
+  - first:
+      213: 8370174502557187197
+    second: bigSlimesSpriteSheet_30
+  - first:
+      213: 4470752168155443478
+    second: bigSlimesSpriteSheet_31
+  - first:
+      213: 8727451985040783615
+    second: bigSlimesSpriteSheet_32
+  - first:
+      213: -7340759639022392042
+    second: bigSlimesSpriteSheet_33
+  - first:
+      213: 8688030538668501133
+    second: bigSlimesSpriteSheet_34
+  - first:
+      213: -5847940880196750945
+    second: bigSlimesSpriteSheet_35
+  - first:
+      213: -3578383223950737081
+    second: bigSlimesSpriteSheet_36
+  - first:
+      213: -2083001874769481658
+    second: bigSlimesSpriteSheet_37
+  - first:
+      213: -1527831720781605297
+    second: bigSlimesSpriteSheet_38
+  - first:
+      213: -6081662717666618699
+    second: bigSlimesSpriteSheet_39
+  - first:
+      213: -6977498247876991603
+    second: bigSlimesSpriteSheet_40
+  - first:
+      213: 917051173713382762
+    second: bigSlimesSpriteSheet_41
+  - first:
+      213: 3844642387432144256
+    second: bigSlimesSpriteSheet_42
+  - first:
+      213: 1999783819035252761
+    second: bigSlimesSpriteSheet_43
+  - first:
+      213: -8463588209048272410
+    second: bigSlimesSpriteSheet_44
+  - first:
+      213: 5591201847167897723
+    second: bigSlimesSpriteSheet_45
+  - first:
+      213: -8952896489826107045
+    second: bigSlimesSpriteSheet_46
+  - first:
+      213: 3146258833050500716
+    second: bigSlimesSpriteSheet_47
+  - first:
+      213: 3891408199692068543
+    second: bigSlimesSpriteSheet_48
+  - first:
+      213: -3625135185377940786
+    second: bigSlimesSpriteSheet_49
+  - first:
+      213: 6166719731880075055
+    second: bigSlimesSpriteSheet_50
+  - first:
+      213: 1066484426472436325
+    second: bigSlimesSpriteSheet_51
+  - first:
+      213: -5394405961269210225
+    second: bigSlimesSpriteSheet_52
+  - first:
+      213: 977610005741678585
+    second: bigSlimesSpriteSheet_53
+  - first:
+      213: -2342397095701070709
+    second: bigSlimesSpriteSheet_54
+  - first:
+      213: 5671914286966554098
+    second: bigSlimesSpriteSheet_55
+  - first:
+      213: -6465672180313891993
+    second: bigSlimesSpriteSheet_56
+  - first:
+      213: 9041689706296091754
+    second: bigSlimesSpriteSheet_57
+  - first:
+      213: 3120675306775344433
+    second: bigSlimesSpriteSheet_58
+  - first:
+      213: -3904144912516857776
+    second: bigSlimesSpriteSheet_59
+  - first:
+      213: -6216550498216719385
+    second: bigSlimesSpriteSheet_60
+  - first:
+      213: 448402089697727916
+    second: bigSlimesSpriteSheet_61
+  - first:
+      213: -5211092201060562170
+    second: bigSlimesSpriteSheet_62
+  - first:
+      213: 3494511899946719894
+    second: bigSlimesSpriteSheet_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 223
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a307748c8483480800000000000000
+      internalID: -8919299036978071004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 223
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974f2006638e4dcb0800000000000000
+      internalID: -4839988379279756167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 225
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed0b7ac532418220800000000000000
+      internalID: 2486341268082986465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 226
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb2dee697a79b810800000000000000
+      internalID: 1781589789572410292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 227
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce26573f6c6fc9e50800000000000000
+      internalID: 6817595270280602348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 228
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf81342f7896e9930800000000000000
+      internalID: 4151871939088161020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 226
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bac5ab24617db20800000000000000
+      internalID: 3159018139473980295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 223
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1a12b44d38eef60800000000000000
+      internalID: 8065528930483937765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407756885876f6a20800000000000000
+      internalID: 3057776495224518404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 191
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d4c8fc17ea59700800000000000000
+      internalID: 546534733631999326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 193
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8a91a2b6db9d7a0800000000000000
+      internalID: -6351837531463898914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 194
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4079408e325e1ed0800000000000000
+      internalID: -2441423519594483635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 195
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde6735b9c169f0b0800000000000000
+      internalID: -5694412734876651812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 196
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3df82a3f2d7cbf20800000000000000
+      internalID: 3439761857196916031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 194
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d72266fb3b352e60800000000000000
+      internalID: 7936815047033104339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 191
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d69a872cf718b90800000000000000
+      internalID: -7241366252610294466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 159
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc1f7ffc98f526f0800000000000000
+      internalID: -709888013055877938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 159
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7bd1680f02f1320800000000000000
+      internalID: 2530777733019842516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 161
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f203ef4c8b45b960800000000000000
+      internalID: 7617077410774844149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 162
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a3e4da1bb0c92c0800000000000000
+      internalID: -4423647876239967696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 163
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a83d60341fa24d0800000000000000
+      internalID: -3158446918467352038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 164
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a66bc23ffda7bf90800000000000000
+      internalID: -6937885389360503128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 162
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b0e6d74fbbc07b0800000000000000
+      internalID: -5256620006297433244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 159
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fdd2c610f5bb280800000000000000
+      internalID: -9026516568419475563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 127
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08873d88283e13b60800000000000000
+      internalID: 7724204985697925248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 127
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7cb61a54a5acd30800000000000000
+      internalID: 4452470436716595108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 129
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c55b8215a992bd30800000000000000
+      internalID: 4445784716427875781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 130
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c863ffdefcc1b570800000000000000
+      internalID: 8480784968366385348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc1aca72ecd33340800000000000000
+      internalID: 4842456889634200798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 132
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f416fe5d4d81290800000000000000
+      internalID: -7919345929421762716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 130
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cf3fcec55d82470800000000000000
+      internalID: 8370174502557187197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 127
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61176bde86d4b0e30800000000000000
+      internalID: 4470752168155443478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 95
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff832a227532e1970800000000000000
+      internalID: 8727451985040783615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 95
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61dab865002602a90800000000000000
+      internalID: -7340759639022392042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 97
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88e4176eb5129870800000000000000
+      internalID: 8688030538668501133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f913360d0c0f7dea0800000000000000
+      internalID: -5847940880196750945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 99
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741033aba67075ec0800000000000000
+      internalID: -3578383223950737081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 100
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64074e3c4d0b713e0800000000000000
+      internalID: -2083001874769481658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 98
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f461d3e052d0ccae0800000000000000
+      internalID: -1527831720781605297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 95
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b29eb5faf7999ba0800000000000000
+      internalID: -6081662717666618699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 63
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85a16adf42fa2f90800000000000000
+      internalID: -6977498247876991603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 63
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d8a0a0f250abc00800000000000000
+      internalID: 917051173713382762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 65
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d7d4fa1e9ea5530800000000000000
+      internalID: 3844642387432144256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 66
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9189b21c9c8a0cb10800000000000000
+      internalID: 1999783819035252761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 67
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e14e7aad5b4b8a80800000000000000
+      internalID: -8463588209048272410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 68
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7053ffd470f79d40800000000000000
+      internalID: 5591201847167897723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 66
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51c215b31ce0c380800000000000000
+      internalID: -8952896489826107045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 63
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ef8633db1c9ab20800000000000000
+      internalID: 3146258833050500716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb620bad32f010630800000000000000
+      internalID: 3891408199692068543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca27c471cee0bdc0800000000000000
+      internalID: -3625135185377940786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 33
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f9a186ce6949550800000000000000
+      internalID: 6166719731880075055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 34
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56230667fe9ecce00800000000000000
+      internalID: 1066484426472436325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 35
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f839c48eb583325b0800000000000000
+      internalID: -5394405961269210225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 36
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffa911ee1b219d00800000000000000
+      internalID: 977610005741678585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 34
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cb4d380422e7fd0800000000000000
+      internalID: -2342397095701070709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 31
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdba1f2effa6be40800000000000000
+      internalID: 5671914286966554098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bd34a98615546a0800000000000000
+      internalID: -6465672180313891993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64a51902e88a7d70800000000000000
+      internalID: 9041689706296091754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1357daf48adde4b20800000000000000
+      internalID: 3120675306775344433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050c8c913e0b1d9c0800000000000000
+      internalID: -3904144912516857776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 3
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebc38132406ab9a0800000000000000
+      internalID: -6216550498216719385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 4
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5d9f8235b093600800000000000000
+      internalID: 448402089697727916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b0affa04b7ea7b0800000000000000
+      internalID: -5211092201060562170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSlimesSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a13bbee000f7030800000000000000
+      internalID: 3494511899946719894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bigSlimesSpriteSheet_0: -8919299036978071004
+      bigSlimesSpriteSheet_1: -4839988379279756167
+      bigSlimesSpriteSheet_10: -6351837531463898914
+      bigSlimesSpriteSheet_11: -2441423519594483635
+      bigSlimesSpriteSheet_12: -5694412734876651812
+      bigSlimesSpriteSheet_13: 3439761857196916031
+      bigSlimesSpriteSheet_14: 7936815047033104339
+      bigSlimesSpriteSheet_15: -7241366252610294466
+      bigSlimesSpriteSheet_16: -709888013055877938
+      bigSlimesSpriteSheet_17: 2530777733019842516
+      bigSlimesSpriteSheet_18: 7617077410774844149
+      bigSlimesSpriteSheet_19: -4423647876239967696
+      bigSlimesSpriteSheet_2: 2486341268082986465
+      bigSlimesSpriteSheet_20: -3158446918467352038
+      bigSlimesSpriteSheet_21: -6937885389360503128
+      bigSlimesSpriteSheet_22: -5256620006297433244
+      bigSlimesSpriteSheet_23: -9026516568419475563
+      bigSlimesSpriteSheet_24: 7724204985697925248
+      bigSlimesSpriteSheet_25: 4452470436716595108
+      bigSlimesSpriteSheet_26: 4445784716427875781
+      bigSlimesSpriteSheet_27: 8480784968366385348
+      bigSlimesSpriteSheet_28: 4842456889634200798
+      bigSlimesSpriteSheet_29: -7919345929421762716
+      bigSlimesSpriteSheet_3: 1781589789572410292
+      bigSlimesSpriteSheet_30: 8370174502557187197
+      bigSlimesSpriteSheet_31: 4470752168155443478
+      bigSlimesSpriteSheet_32: 8727451985040783615
+      bigSlimesSpriteSheet_33: -7340759639022392042
+      bigSlimesSpriteSheet_34: 8688030538668501133
+      bigSlimesSpriteSheet_35: -5847940880196750945
+      bigSlimesSpriteSheet_36: -3578383223950737081
+      bigSlimesSpriteSheet_37: -2083001874769481658
+      bigSlimesSpriteSheet_38: -1527831720781605297
+      bigSlimesSpriteSheet_39: -6081662717666618699
+      bigSlimesSpriteSheet_4: 6817595270280602348
+      bigSlimesSpriteSheet_40: -6977498247876991603
+      bigSlimesSpriteSheet_41: 917051173713382762
+      bigSlimesSpriteSheet_42: 3844642387432144256
+      bigSlimesSpriteSheet_43: 1999783819035252761
+      bigSlimesSpriteSheet_44: -8463588209048272410
+      bigSlimesSpriteSheet_45: 5591201847167897723
+      bigSlimesSpriteSheet_46: -8952896489826107045
+      bigSlimesSpriteSheet_47: 3146258833050500716
+      bigSlimesSpriteSheet_48: 3891408199692068543
+      bigSlimesSpriteSheet_49: -3625135185377940786
+      bigSlimesSpriteSheet_5: 4151871939088161020
+      bigSlimesSpriteSheet_50: 6166719731880075055
+      bigSlimesSpriteSheet_51: 1066484426472436325
+      bigSlimesSpriteSheet_52: -5394405961269210225
+      bigSlimesSpriteSheet_53: 977610005741678585
+      bigSlimesSpriteSheet_54: -2342397095701070709
+      bigSlimesSpriteSheet_55: 5671914286966554098
+      bigSlimesSpriteSheet_56: -6465672180313891993
+      bigSlimesSpriteSheet_57: 9041689706296091754
+      bigSlimesSpriteSheet_58: 3120675306775344433
+      bigSlimesSpriteSheet_59: -3904144912516857776
+      bigSlimesSpriteSheet_6: 3159018139473980295
+      bigSlimesSpriteSheet_60: -6216550498216719385
+      bigSlimesSpriteSheet_61: 448402089697727916
+      bigSlimesSpriteSheet_62: -5211092201060562170
+      bigSlimesSpriteSheet_63: 3494511899946719894
+      bigSlimesSpriteSheet_7: 8065528930483937765
+      bigSlimesSpriteSheet_8: 3057776495224518404
+      bigSlimesSpriteSheet_9: 546534733631999326
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

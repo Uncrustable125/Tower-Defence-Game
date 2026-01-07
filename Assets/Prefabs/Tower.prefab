@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 2426037920535811689}
   m_Layer: 0
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.89, y: -2.14, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6457623570246429986}
@@ -360,7 +360,10 @@ MonoBehaviour:
   appliesSlow: 0
   slowMultiplier: 0
   slowDuration: 0
-  projectileSpeed: 0
+  isBuffTower: 0
+  buffRange: 0
+  fireRateMultiplier: 0
+  projectileScale: 0
   firePoint: {fileID: 6457623570246429986}
   projectilePrefab: {fileID: 5034149744640237862, guid: 73183b4ee7de86a4492504d8676efbae, type: 3}
   topSprite: {fileID: 95120986319819976}
@@ -404,8 +407,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.008063316, y: 0.37803575}
-  m_Size: {x: 0.8870411, y: 1.4819163}
+  m_Offset: {x: 0.019671023, y: 0.038037673}
+  m_Size: {x: 0.8019203, y: 0.8019203}
   m_Direction: 0
 --- !u!120 &2426037920535811689
 LineRenderer:

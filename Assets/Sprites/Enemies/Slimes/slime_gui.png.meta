@@ -1,0 +1,2626 @@
+fileFormatVersion: 2
+guid: b386c1fb0a903e24aaecc61c235bf2f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4626168550857503128
+    second: slime_gui_0
+  - first:
+      213: 496059033717055584
+    second: slime_gui_1
+  - first:
+      213: 5980035417815090834
+    second: slime_gui_2
+  - first:
+      213: 2760002344588328615
+    second: slime_gui_3
+  - first:
+      213: -1130717534536439094
+    second: slime_gui_4
+  - first:
+      213: 4500303881581309636
+    second: slime_gui_5
+  - first:
+      213: -272879004132820849
+    second: slime_gui_6
+  - first:
+      213: 895160265825768115
+    second: slime_gui_7
+  - first:
+      213: -8651822366493675131
+    second: slime_gui_8
+  - first:
+      213: -7795560018445889434
+    second: slime_gui_9
+  - first:
+      213: -7819224211156717102
+    second: slime_gui_10
+  - first:
+      213: 6813748086987908484
+    second: slime_gui_11
+  - first:
+      213: 7185844269708485033
+    second: slime_gui_12
+  - first:
+      213: -2812080814813560111
+    second: slime_gui_13
+  - first:
+      213: 2442541117327287133
+    second: slime_gui_14
+  - first:
+      213: 3746751242134345522
+    second: slime_gui_15
+  - first:
+      213: 2573374217929983432
+    second: slime_gui_16
+  - first:
+      213: 2389341849963095784
+    second: slime_gui_17
+  - first:
+      213: 5494228124805325074
+    second: slime_gui_18
+  - first:
+      213: -8368029178705631823
+    second: slime_gui_19
+  - first:
+      213: 6501275625892493120
+    second: slime_gui_20
+  - first:
+      213: 6195707529994261393
+    second: slime_gui_21
+  - first:
+      213: 8061989009329427584
+    second: slime_gui_22
+  - first:
+      213: -1131392629815794801
+    second: slime_gui_23
+  - first:
+      213: 7908247414899040182
+    second: slime_gui_24
+  - first:
+      213: 1681479040756161091
+    second: slime_gui_25
+  - first:
+      213: -7777059101434143816
+    second: slime_gui_26
+  - first:
+      213: 2133176243822502450
+    second: slime_gui_27
+  - first:
+      213: 7657161447763071377
+    second: slime_gui_28
+  - first:
+      213: 8925893758229912207
+    second: slime_gui_29
+  - first:
+      213: -2498776241335198307
+    second: slime_gui_30
+  - first:
+      213: -8905022523120153317
+    second: slime_gui_31
+  - first:
+      213: 1040565170173963381
+    second: slime_gui_32
+  - first:
+      213: -4091265770178825306
+    second: slime_gui_33
+  - first:
+      213: 5408573323810548940
+    second: slime_gui_34
+  - first:
+      213: -915283496183360564
+    second: slime_gui_35
+  - first:
+      213: -828244499873742481
+    second: slime_gui_36
+  - first:
+      213: -1356760447522678006
+    second: slime_gui_37
+  - first:
+      213: 5835299380517183637
+    second: slime_gui_38
+  - first:
+      213: -5798352319828139204
+    second: slime_gui_39
+  - first:
+      213: 3732125224774698882
+    second: slime_gui_40
+  - first:
+      213: 6785167551154575725
+    second: slime_gui_41
+  - first:
+      213: -944660662044539540
+    second: slime_gui_42
+  - first:
+      213: -6555094458044160186
+    second: slime_gui_43
+  - first:
+      213: -9158477997031458084
+    second: slime_gui_44
+  - first:
+      213: -6365088013611176551
+    second: slime_gui_45
+  - first:
+      213: 6596897710031419090
+    second: slime_gui_46
+  - first:
+      213: 8843817252158561589
+    second: slime_gui_47
+  - first:
+      213: 4882813671169507713
+    second: slime_gui_48
+  - first:
+      213: 1527175668632498432
+    second: slime_gui_49
+  - first:
+      213: 8367442275239927063
+    second: slime_gui_50
+  - first:
+      213: 3713258263099287673
+    second: slime_gui_51
+  - first:
+      213: 908608988109798608
+    second: slime_gui_52
+  - first:
+      213: -4406558498414289114
+    second: slime_gui_53
+  - first:
+      213: 4692999251158346303
+    second: slime_gui_54
+  - first:
+      213: 3368143515948075906
+    second: slime_gui_55
+  - first:
+      213: -8055060454445109423
+    second: slime_gui_56
+  - first:
+      213: -2778249531252050065
+    second: slime_gui_57
+  - first:
+      213: 5688757083980467596
+    second: slime_gui_58
+  - first:
+      213: 8619647239847486395
+    second: slime_gui_59
+  - first:
+      213: -7439805918372561589
+    second: slime_gui_60
+  - first:
+      213: -5574356439861747591
+    second: slime_gui_61
+  - first:
+      213: -4930535243554148205
+    second: slime_gui_62
+  - first:
+      213: 4094959998262214611
+    second: slime_gui_63
+  - first:
+      213: 1880843240178760238
+    second: slime_gui_64
+  - first:
+      213: 566419915855410228
+    second: slime_gui_65
+  - first:
+      213: -8050243998262135652
+    second: slime_gui_66
+  - first:
+      213: 6392910883430339822
+    second: slime_gui_67
+  - first:
+      213: 665656767857730591
+    second: slime_gui_68
+  - first:
+      213: 3265629867458618380
+    second: slime_gui_69
+  - first:
+      213: 4676067620170898352
+    second: slime_gui_70
+  - first:
+      213: -488664015932455547
+    second: slime_gui_71
+  - first:
+      213: -361731248904636570
+    second: slime_gui_72
+  - first:
+      213: -1123166791187480310
+    second: slime_gui_73
+  - first:
+      213: 2034360928463964359
+    second: slime_gui_74
+  - first:
+      213: -449152611528488847
+    second: slime_gui_75
+  - first:
+      213: -4732538248001278975
+    second: slime_gui_76
+  - first:
+      213: -3229952083552055895
+    second: slime_gui_77
+  - first:
+      213: -1584869940899069283
+    second: slime_gui_78
+  - first:
+      213: -6040625467485134925
+    second: slime_gui_79
+  - first:
+      213: -7867261608283899925
+    second: slime_gui_80
+  - first:
+      213: 7554872865180954146
+    second: slime_gui_81
+  - first:
+      213: 500047775104845253
+    second: slime_gui_82
+  - first:
+      213: 2441464069778817128
+    second: slime_gui_83
+  - first:
+      213: -2459240313931392963
+    second: slime_gui_84
+  - first:
+      213: -8785974059197709938
+    second: slime_gui_85
+  - first:
+      213: -455530188269372182
+    second: slime_gui_86
+  - first:
+      213: -3502037144004666912
+    second: slime_gui_87
+  - first:
+      213: -5740033967575099307
+    second: slime_gui_88
+  - first:
+      213: 7473582429223688994
+    second: slime_gui_89
+  - first:
+      213: -4162414590699538072
+    second: slime_gui_90
+  - first:
+      213: -1887524826887555861
+    second: slime_gui_91
+  - first:
+      213: -6182602081880629442
+    second: slime_gui_92
+  - first:
+      213: -5735804888012748759
+    second: slime_gui_93
+  - first:
+      213: 2986553501556263595
+    second: slime_gui_94
+  - first:
+      213: -4229496301432778942
+    second: slime_gui_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slime_gui_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 339
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e0e07a63c8ccfb0800000000000000
+      internalID: -4626168550857503128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 339
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060245c101b52e600800000000000000
+      internalID: 496059033717055584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 339
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2968f17678a5df250800000000000000
+      internalID: 5980035417815090834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 339
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aebe60628f7d4620800000000000000
+      internalID: 2760002344588328615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 339
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca66a4a462ee40f0800000000000000
+      internalID: -1130717534536439094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 339
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce27f2698a447e30800000000000000
+      internalID: 4500303881581309636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 339
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f883004ddf9863cf0800000000000000
+      internalID: -272879004132820849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 339
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2d69dd48f3c6c00800000000000000
+      internalID: 895160265825768115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 339
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5817d51a56d8ee780800000000000000
+      internalID: -8651822366493675131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 339
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6609b43477b90d390800000000000000
+      internalID: -7795560018445889434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_10
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 339
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1beda02098c7390800000000000000
+      internalID: -7819224211156717102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 339
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48569e9c8cb4f8e50800000000000000
+      internalID: 6813748086987908484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 291
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a120438a4f39b360800000000000000
+      internalID: 7185844269708485033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_13
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 291
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2c851e56b79f8d0800000000000000
+      internalID: -2812080814813560111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 291
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53249f7436a5e120800000000000000
+      internalID: 2442541117327287133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_15
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 291
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237db2157622ff330800000000000000
+      internalID: 3746751242134345522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 291
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c58dd5873676b320800000000000000
+      internalID: 2573374217929983432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 291
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e66606d0c5a82120800000000000000
+      internalID: 2389341849963095784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 291
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2116bfdae5b6f3c40800000000000000
+      internalID: 5494228124805325074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_19
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 291
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5a5253cc9cedb80800000000000000
+      internalID: -8368029178705631823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_20
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 291
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0473a3c8cbb293a50800000000000000
+      internalID: 6501275625892493120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_21
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 291
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19355891c239bf550800000000000000
+      internalID: 6195707529994261393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_22
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 291
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0841f2c2a40f1ef60800000000000000
+      internalID: 8061989009329427584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_23
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 291
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83a556c56c7c40f0800000000000000
+      internalID: -1131392629815794801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 243
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf55f8cf1dbfbd60800000000000000
+      internalID: 7908247414899040182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_25
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 243
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a19895740d55710800000000000000
+      internalID: 1681479040756161091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_26
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 243
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb9ccda3f5521490800000000000000
+      internalID: -7777059101434143816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_27
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 243
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232a750ed709a9d10800000000000000
+      internalID: 2133176243822502450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 243
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191dbb174c3b34a60800000000000000
+      internalID: 7657161447763071377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_29
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 243
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a9b2ae4152fdb70800000000000000
+      internalID: 8925893758229912207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_30
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 243
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d97026f30925dd0800000000000000
+      internalID: -2498776241335198307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_31
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 243
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d029032310b6480800000000000000
+      internalID: -8905022523120153317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_32
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 243
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cecd55284d07e00800000000000000
+      internalID: 1040565170173963381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_33
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 243
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3b6ce5577e837c0800000000000000
+      internalID: -4091265770178825306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_34
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 243
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccca16b38cc1f0b40800000000000000
+      internalID: 5408573323810548940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_35
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 243
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3963572824c43f0800000000000000
+      internalID: -915283496183360564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 195
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61caddf30c7184f0800000000000000
+      internalID: -828244499873742481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_37
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 195
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b5c18bf81db2de0800000000000000
+      internalID: -1356760447522678006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_38
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 195
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590a8cdaed52bf050800000000000000
+      internalID: 5835299380517183637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_39
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 195
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33e41e394d188fa0800000000000000
+      internalID: -5798352319828139204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 195
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28788f74e1c2bc330800000000000000
+      internalID: 3732125224774698882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_41
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 195
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69531c30f1c92e50800000000000000
+      internalID: 6785167551154575725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_42
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 195
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65cc850224e3e2f0800000000000000
+      internalID: -944660662044539540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_43
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 195
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647652f1250a705a0800000000000000
+      internalID: -6555094458044160186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_44
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 195
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda75bf09cc86e080800000000000000
+      internalID: -9158477997031458084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_45
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 195
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99deb90ec2aaaa7a0800000000000000
+      internalID: -6365088013611176551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_46
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 195
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6b202f383ec8b50800000000000000
+      internalID: 6596897710031419090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_47
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 195
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53dd16d2fec8bba70800000000000000
+      internalID: 8843817252158561589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 147
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181ca76e92d33c340800000000000000
+      internalID: 4882813671169507713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_49
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 147
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001b576ed2e913510800000000000000
+      internalID: 1527175668632498432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_50
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 147
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d134eaa602f1470800000000000000
+      internalID: 8367442275239927063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_51
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 147
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978215377b4288330800000000000000
+      internalID: 3713258263099287673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 147
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcf2088f070c9c00800000000000000
+      internalID: 908608988109798608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_53
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 147
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f99048462c8d2c0800000000000000
+      internalID: -4406558498414289114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_54
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 147
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3aa77054f1e02140800000000000000
+      internalID: 4692999251158346303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_55
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 147
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bce9cbeac0ebe20800000000000000
+      internalID: 3368143515948075906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_56
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 147
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fa088b13da63090800000000000000
+      internalID: -8055060454445109423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_57
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 147
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67735865cca179d0800000000000000
+      internalID: -2778249531252050065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_58
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 147
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d84247d6682fe40800000000000000
+      internalID: 5688757083980467596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_59
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 147
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3294cee732f9770800000000000000
+      internalID: 8619647239847486395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_60
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 99
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dfd8d5fef70c890800000000000000
+      internalID: -7439805918372561589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_61
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 99
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97021a62a58e3a2b0800000000000000
+      internalID: -5574356439861747591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_62
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 99
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390396fa158339bb0800000000000000
+      internalID: -4930535243554148205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_63
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 99
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df7ad12c6834d830800000000000000
+      internalID: 4094959998262214611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_64
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 99
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2abc0936f81a1a10800000000000000
+      internalID: 1880843240178760238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_65
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 99
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434b44699e35cd700800000000000000
+      internalID: 566419915855410228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_66
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 99
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c947d505cb9c74090800000000000000
+      internalID: -8050243998262135652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_67
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 99
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4189fc39e28b850800000000000000
+      internalID: 6392910883430339822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_68
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 99
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14ae76bd43ec3900800000000000000
+      internalID: 665656767857730591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_69
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 99
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04e6c9ff09d15d20800000000000000
+      internalID: 3265629867458618380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_70
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 99
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb1ef5c9bab4e040800000000000000
+      internalID: 4676067620170898352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_71
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 99
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58584d3aaaae739f0800000000000000
+      internalID: -488664015932455547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 51
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66771ec785fdafaf0800000000000000
+      internalID: -361731248904636570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_73
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 51
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0141c311c5b960f0800000000000000
+      internalID: -1123166791187480310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_74
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 51
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c847066c708b3c10800000000000000
+      internalID: 2034360928463964359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_75
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 51
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178c7eb541a44c9f0800000000000000
+      internalID: -449152611528488847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_76
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 51
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c2fe99985a25eb0800000000000000
+      internalID: -4732538248001278975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_77
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 51
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9adc85a61b7ec23d0800000000000000
+      internalID: -3229952083552055895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_78
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 51
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92448d8f29610ae0800000000000000
+      internalID: -1584869940899069283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_79
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 51
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfde5554236b2ca0800000000000000
+      internalID: -6040625467485134925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_80
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 51
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be77b23ff3fd1d290800000000000000
+      internalID: -7867261608283899925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_81
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 51
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e295ce7dc48d860800000000000000
+      internalID: 7554872865180954146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_82
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 51
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c549d55dc680f600800000000000000
+      internalID: 500047775104845253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_83
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 51
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860cb03d2a2d1e120800000000000000
+      internalID: 2441464069778817128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_84
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d389ccec6f50fddd0800000000000000
+      internalID: -2459240313931392963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_85
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8149bba423f11680800000000000000
+      internalID: -8785974059197709938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_86
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecbcbf05b1ada9f0800000000000000
+      internalID: -455530188269372182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_87
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 3
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9d069a5c3466fc0800000000000000
+      internalID: -3502037144004666912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_88
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558920cb48d4750b0800000000000000
+      internalID: -5740033967575099307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_89
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b9a756f9f77b760800000000000000
+      internalID: 7473582429223688994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_90
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 3
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8697371bbf12c36c0800000000000000
+      internalID: -4162414590699538072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_91
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 3
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4f2a4ab2a2ec5e0800000000000000
+      internalID: -1887524826887555861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_92
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 3
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f1ae1d92cf23aa0800000000000000
+      internalID: -6182602081880629442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_93
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 3
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9280d0d08d35660b0800000000000000
+      internalID: -5735804888012748759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_94
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 3
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baac5f2169e527920800000000000000
+      internalID: 2986553501556263595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_gui_95
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 3
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f454ec58fcd45c0800000000000000
+      internalID: -4229496301432778942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      slime_gui_0: -4626168550857503128
+      slime_gui_1: 496059033717055584
+      slime_gui_10: -7819224211156717102
+      slime_gui_11: 6813748086987908484
+      slime_gui_12: 7185844269708485033
+      slime_gui_13: -2812080814813560111
+      slime_gui_14: 2442541117327287133
+      slime_gui_15: 3746751242134345522
+      slime_gui_16: 2573374217929983432
+      slime_gui_17: 2389341849963095784
+      slime_gui_18: 5494228124805325074
+      slime_gui_19: -8368029178705631823
+      slime_gui_2: 5980035417815090834
+      slime_gui_20: 6501275625892493120
+      slime_gui_21: 6195707529994261393
+      slime_gui_22: 8061989009329427584
+      slime_gui_23: -1131392629815794801
+      slime_gui_24: 7908247414899040182
+      slime_gui_25: 1681479040756161091
+      slime_gui_26: -7777059101434143816
+      slime_gui_27: 2133176243822502450
+      slime_gui_28: 7657161447763071377
+      slime_gui_29: 8925893758229912207
+      slime_gui_3: 2760002344588328615
+      slime_gui_30: -2498776241335198307
+      slime_gui_31: -8905022523120153317
+      slime_gui_32: 1040565170173963381
+      slime_gui_33: -4091265770178825306
+      slime_gui_34: 5408573323810548940
+      slime_gui_35: -915283496183360564
+      slime_gui_36: -828244499873742481
+      slime_gui_37: -1356760447522678006
+      slime_gui_38: 5835299380517183637
+      slime_gui_39: -5798352319828139204
+      slime_gui_4: -1130717534536439094
+      slime_gui_40: 3732125224774698882
+      slime_gui_41: 6785167551154575725
+      slime_gui_42: -944660662044539540
+      slime_gui_43: -6555094458044160186
+      slime_gui_44: -9158477997031458084
+      slime_gui_45: -6365088013611176551
+      slime_gui_46: 6596897710031419090
+      slime_gui_47: 8843817252158561589
+      slime_gui_48: 4882813671169507713
+      slime_gui_49: 1527175668632498432
+      slime_gui_5: 4500303881581309636
+      slime_gui_50: 8367442275239927063
+      slime_gui_51: 3713258263099287673
+      slime_gui_52: 908608988109798608
+      slime_gui_53: -4406558498414289114
+      slime_gui_54: 4692999251158346303
+      slime_gui_55: 3368143515948075906
+      slime_gui_56: -8055060454445109423
+      slime_gui_57: -2778249531252050065
+      slime_gui_58: 5688757083980467596
+      slime_gui_59: 8619647239847486395
+      slime_gui_6: -272879004132820849
+      slime_gui_60: -7439805918372561589
+      slime_gui_61: -5574356439861747591
+      slime_gui_62: -4930535243554148205
+      slime_gui_63: 4094959998262214611
+      slime_gui_64: 1880843240178760238
+      slime_gui_65: 566419915855410228
+      slime_gui_66: -8050243998262135652
+      slime_gui_67: 6392910883430339822
+      slime_gui_68: 665656767857730591
+      slime_gui_69: 3265629867458618380
+      slime_gui_7: 895160265825768115
+      slime_gui_70: 4676067620170898352
+      slime_gui_71: -488664015932455547
+      slime_gui_72: -361731248904636570
+      slime_gui_73: -1123166791187480310
+      slime_gui_74: 2034360928463964359
+      slime_gui_75: -449152611528488847
+      slime_gui_76: -4732538248001278975
+      slime_gui_77: -3229952083552055895
+      slime_gui_78: -1584869940899069283
+      slime_gui_79: -6040625467485134925
+      slime_gui_8: -8651822366493675131
+      slime_gui_80: -7867261608283899925
+      slime_gui_81: 7554872865180954146
+      slime_gui_82: 500047775104845253
+      slime_gui_83: 2441464069778817128
+      slime_gui_84: -2459240313931392963
+      slime_gui_85: -8785974059197709938
+      slime_gui_86: -455530188269372182
+      slime_gui_87: -3502037144004666912
+      slime_gui_88: -5740033967575099307
+      slime_gui_89: 7473582429223688994
+      slime_gui_9: -7795560018445889434
+      slime_gui_90: -4162414590699538072
+      slime_gui_91: -1887524826887555861
+      slime_gui_92: -6182602081880629442
+      slime_gui_93: -5735804888012748759
+      slime_gui_94: 2986553501556263595
+      slime_gui_95: -4229496301432778942
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

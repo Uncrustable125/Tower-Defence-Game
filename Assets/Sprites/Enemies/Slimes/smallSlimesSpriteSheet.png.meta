@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: 0c74c6235993d7c46bff2a44fdd1c0bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3128785900147588508
+    second: smallSlimesSpriteSheet_0
+  - first:
+      213: 5193918810543894652
+    second: smallSlimesSpriteSheet_1
+  - first:
+      213: -2834371715090799174
+    second: smallSlimesSpriteSheet_2
+  - first:
+      213: -7830073184451538067
+    second: smallSlimesSpriteSheet_3
+  - first:
+      213: 6830791353369265498
+    second: smallSlimesSpriteSheet_4
+  - first:
+      213: 6966398524009040115
+    second: smallSlimesSpriteSheet_5
+  - first:
+      213: -129626508344266927
+    second: smallSlimesSpriteSheet_6
+  - first:
+      213: 3299657157102377914
+    second: smallSlimesSpriteSheet_7
+  - first:
+      213: -3292219620994458700
+    second: smallSlimesSpriteSheet_8
+  - first:
+      213: -7212537301742107852
+    second: smallSlimesSpriteSheet_9
+  - first:
+      213: 4704900207168018021
+    second: smallSlimesSpriteSheet_10
+  - first:
+      213: -81473499360908250
+    second: smallSlimesSpriteSheet_11
+  - first:
+      213: -8852139728378706825
+    second: smallSlimesSpriteSheet_12
+  - first:
+      213: -6230573138900096503
+    second: smallSlimesSpriteSheet_13
+  - first:
+      213: -4171137713922160701
+    second: smallSlimesSpriteSheet_14
+  - first:
+      213: -6826386024373899295
+    second: smallSlimesSpriteSheet_15
+  - first:
+      213: 781869187214557840
+    second: smallSlimesSpriteSheet_16
+  - first:
+      213: -8731464228692775477
+    second: smallSlimesSpriteSheet_17
+  - first:
+      213: -5344656658523831848
+    second: smallSlimesSpriteSheet_18
+  - first:
+      213: -7208423385864305237
+    second: smallSlimesSpriteSheet_19
+  - first:
+      213: 8331432422698971923
+    second: smallSlimesSpriteSheet_20
+  - first:
+      213: -8471788580424110696
+    second: smallSlimesSpriteSheet_21
+  - first:
+      213: -1417238315616672311
+    second: smallSlimesSpriteSheet_22
+  - first:
+      213: -7436187668048407731
+    second: smallSlimesSpriteSheet_23
+  - first:
+      213: 2921789442153207885
+    second: smallSlimesSpriteSheet_24
+  - first:
+      213: 3023643664311482252
+    second: smallSlimesSpriteSheet_25
+  - first:
+      213: 4893955812830834352
+    second: smallSlimesSpriteSheet_26
+  - first:
+      213: -3855364427334886072
+    second: smallSlimesSpriteSheet_27
+  - first:
+      213: 4582059032174588781
+    second: smallSlimesSpriteSheet_28
+  - first:
+      213: -5122990643006999275
+    second: smallSlimesSpriteSheet_29
+  - first:
+      213: 804520414159837926
+    second: smallSlimesSpriteSheet_30
+  - first:
+      213: -5998366386913697545
+    second: smallSlimesSpriteSheet_31
+  - first:
+      213: 2173143776060593116
+    second: smallSlimesSpriteSheet_32
+  - first:
+      213: -9094937387963780590
+    second: smallSlimesSpriteSheet_33
+  - first:
+      213: -8746859476079622535
+    second: smallSlimesSpriteSheet_34
+  - first:
+      213: -2358455567086449108
+    second: smallSlimesSpriteSheet_35
+  - first:
+      213: -6604335883459316761
+    second: smallSlimesSpriteSheet_36
+  - first:
+      213: -764755960175789711
+    second: smallSlimesSpriteSheet_37
+  - first:
+      213: 486428453045967495
+    second: smallSlimesSpriteSheet_38
+  - first:
+      213: -7761980444727957843
+    second: smallSlimesSpriteSheet_39
+  - first:
+      213: 3482415217239945062
+    second: smallSlimesSpriteSheet_40
+  - first:
+      213: 2376126900423287114
+    second: smallSlimesSpriteSheet_41
+  - first:
+      213: -3627351689369904430
+    second: smallSlimesSpriteSheet_42
+  - first:
+      213: -4389862065587116703
+    second: smallSlimesSpriteSheet_43
+  - first:
+      213: -8273774941402404551
+    second: smallSlimesSpriteSheet_44
+  - first:
+      213: 4401751176132100486
+    second: smallSlimesSpriteSheet_45
+  - first:
+      213: -4975523669252119462
+    second: smallSlimesSpriteSheet_46
+  - first:
+      213: 7795368259767518737
+    second: smallSlimesSpriteSheet_47
+  - first:
+      213: 9031587336327725112
+    second: smallSlimesSpriteSheet_48
+  - first:
+      213: -4481538515205196924
+    second: smallSlimesSpriteSheet_49
+  - first:
+      213: -2986982630907436542
+    second: smallSlimesSpriteSheet_50
+  - first:
+      213: -8888821168845650265
+    second: smallSlimesSpriteSheet_51
+  - first:
+      213: 4327598775632461457
+    second: smallSlimesSpriteSheet_52
+  - first:
+      213: -577768021560067305
+    second: smallSlimesSpriteSheet_53
+  - first:
+      213: -5711478210903688081
+    second: smallSlimesSpriteSheet_54
+  - first:
+      213: 5288932069961394401
+    second: smallSlimesSpriteSheet_55
+  - first:
+      213: -9183667009134691566
+    second: smallSlimesSpriteSheet_56
+  - first:
+      213: 6210580521625310647
+    second: smallSlimesSpriteSheet_57
+  - first:
+      213: 3468485377334936327
+    second: smallSlimesSpriteSheet_58
+  - first:
+      213: 6368608174736372413
+    second: smallSlimesSpriteSheet_59
+  - first:
+      213: 988549775741774650
+    second: smallSlimesSpriteSheet_60
+  - first:
+      213: -812654490234122248
+    second: smallSlimesSpriteSheet_61
+  - first:
+      213: 4677380520373215283
+    second: smallSlimesSpriteSheet_62
+  - first:
+      213: -4025448073512517561
+    second: smallSlimesSpriteSheet_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 223
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462c3730dc15494d0800000000000000
+      internalID: -3128785900147588508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 223
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7030beb3a1841840800000000000000
+      internalID: 5193918810543894652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 223
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5299831f94aa8d0800000000000000
+      internalID: -2834371715090799174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 224
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63547b9cedf55390800000000000000
+      internalID: -7830073184451538067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 225
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5582687b88dbce50800000000000000
+      internalID: 6830791353369265498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 226
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f84d5b4c8e9da060800000000000000
+      internalID: 6966398524009040115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 224
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f6aa0a069733ef0800000000000000
+      internalID: -129626508344266927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 223
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb99a9b3bcbacd20800000000000000
+      internalID: 3299657157102377914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 191
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbdd0892bfaf42d0800000000000000
+      internalID: -3292219620994458700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 191
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4334868a98be7eb90800000000000000
+      internalID: -7212537301742107852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 191
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56659ef8fc92b4140800000000000000
+      internalID: 4704900207168018021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 192
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c2cf3b84c8edef0800000000000000
+      internalID: -81473499360908250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 193
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7744dd351d1e62580800000000000000
+      internalID: -8852139728378706825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 194
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ae4ccbdbe8889a0800000000000000
+      internalID: -6230573138900096503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 192
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c74f6c49542d16c0800000000000000
+      internalID: -4171137713922160701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 191
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efa08d141ec341a0800000000000000
+      internalID: -6826386024373899295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 159
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0924fbc12e1c9da00800000000000000
+      internalID: 781869187214557840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 159
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdacb79b8b93d680800000000000000
+      internalID: -8731464228692775477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 159
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1c2461617f3d5b0800000000000000
+      internalID: -5344656658523831848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 160
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba580f65f1986fb90800000000000000
+      internalID: -7208423385864305237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 161
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313f42985a13f9370800000000000000
+      internalID: 8331432422698971923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 162
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d2c9beb292e6a80800000000000000
+      internalID: -8471788580424110696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 160
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c56893c245f45ce0800000000000000
+      internalID: -1417238315616672311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 159
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4395dae6ba5dc890800000000000000
+      internalID: -7436187668048407731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 127
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48570074084c8820800000000000000
+      internalID: 2921789442153207885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 127
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8775aa84e326f920800000000000000
+      internalID: 3023643664311482252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 127
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be6d3ae1e2dae340800000000000000
+      internalID: 4893955812830834352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 128
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84dd60dda7efe7ac0800000000000000
+      internalID: -3855364427334886072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 129
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63f2a8b96eb69f30800000000000000
+      internalID: 4582059032174588781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515fae7272b77e8b0800000000000000
+      internalID: -5122990643006999275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 128
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea1c8cdd0b3a2b00800000000000000
+      internalID: 804520414159837926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 127
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0ad534d8581cca0800000000000000
+      internalID: -5998366386913697545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 95
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd351f120ce882e10800000000000000
+      internalID: 2173143776060593116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 95
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212fff7f1aa48c180800000000000000
+      internalID: -9094937387963780590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 95
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976c30c36a9ec9680800000000000000
+      internalID: -8746859476079622535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 96
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e05494825154fd0800000000000000
+      internalID: -2358455567086449108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 97
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3ba09518fa854a0800000000000000
+      internalID: -6604335883459316761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 98
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179fbdd818a0365f0800000000000000
+      internalID: -764755960175789711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 96
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a9270d91420c600800000000000000
+      internalID: 486428453045967495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 95
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6267609e7e74490800000000000000
+      internalID: -7761980444727957843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f60008036045030800000000000000
+      internalID: 3482415217239945062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 63
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41eaf0a3d2b9f020800000000000000
+      internalID: 2376126900423287114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da91b76bde09adc0800000000000000
+      internalID: -3627351689369904430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 64
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165a7b7b5b31413c0800000000000000
+      internalID: -4389862065587116703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 65
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9396e22f685ad2d80800000000000000
+      internalID: -8273774941402404551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 66
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681030b8f59261d30800000000000000
+      internalID: 4401751176132100486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 64
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54eda2959363fab0800000000000000
+      internalID: -4975523669252119462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 63
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1164cc07126be2c60800000000000000
+      internalID: 7795368259767518737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 31
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8300bbbb4d4a65d70800000000000000
+      internalID: 9031587336327725112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 31
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48376f1f6706ec1c0800000000000000
+      internalID: -4481538515205196924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 31
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20220867f1b1c86d0800000000000000
+      internalID: -2986982630907436542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 32
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a68bfeed3094a480800000000000000
+      internalID: -8888821168845650265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 33
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19efcf76828be0c30800000000000000
+      internalID: 4327598775632461457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 34
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bf458ab0b5bf7f0800000000000000
+      internalID: -577768021560067305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 32
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cb3b0f3d0ccb0b0800000000000000
+      internalID: -5711478210903688081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 31
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8683712bf066940800000000000000
+      internalID: 5288932069961394401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b7d09238f0d8080800000000000000
+      internalID: -9183667009134691566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5df60541a603650800000000000000
+      internalID: 6210580521625310647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7038fa8e219822030800000000000000
+      internalID: 3468485377334936327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db27fc08467d16850800000000000000
+      internalID: 6368608174736372413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b61e198c808bd00800000000000000
+      internalID: 988549775741774650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff0878fb0fd8b4f0800000000000000
+      internalID: -812654490234122248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3306d2c2dc469e040800000000000000
+      internalID: 4677380520373215283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallSlimesSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740818c0e4cb228c0800000000000000
+      internalID: -4025448073512517561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      smallSlimesSpriteSheet_0: -3128785900147588508
+      smallSlimesSpriteSheet_1: 5193918810543894652
+      smallSlimesSpriteSheet_10: 4704900207168018021
+      smallSlimesSpriteSheet_11: -81473499360908250
+      smallSlimesSpriteSheet_12: -8852139728378706825
+      smallSlimesSpriteSheet_13: -6230573138900096503
+      smallSlimesSpriteSheet_14: -4171137713922160701
+      smallSlimesSpriteSheet_15: -6826386024373899295
+      smallSlimesSpriteSheet_16: 781869187214557840
+      smallSlimesSpriteSheet_17: -8731464228692775477
+      smallSlimesSpriteSheet_18: -5344656658523831848
+      smallSlimesSpriteSheet_19: -7208423385864305237
+      smallSlimesSpriteSheet_2: -2834371715090799174
+      smallSlimesSpriteSheet_20: 8331432422698971923
+      smallSlimesSpriteSheet_21: -8471788580424110696
+      smallSlimesSpriteSheet_22: -1417238315616672311
+      smallSlimesSpriteSheet_23: -7436187668048407731
+      smallSlimesSpriteSheet_24: 2921789442153207885
+      smallSlimesSpriteSheet_25: 3023643664311482252
+      smallSlimesSpriteSheet_26: 4893955812830834352
+      smallSlimesSpriteSheet_27: -3855364427334886072
+      smallSlimesSpriteSheet_28: 4582059032174588781
+      smallSlimesSpriteSheet_29: -5122990643006999275
+      smallSlimesSpriteSheet_3: -7830073184451538067
+      smallSlimesSpriteSheet_30: 804520414159837926
+      smallSlimesSpriteSheet_31: -5998366386913697545
+      smallSlimesSpriteSheet_32: 2173143776060593116
+      smallSlimesSpriteSheet_33: -9094937387963780590
+      smallSlimesSpriteSheet_34: -8746859476079622535
+      smallSlimesSpriteSheet_35: -2358455567086449108
+      smallSlimesSpriteSheet_36: -6604335883459316761
+      smallSlimesSpriteSheet_37: -764755960175789711
+      smallSlimesSpriteSheet_38: 486428453045967495
+      smallSlimesSpriteSheet_39: -7761980444727957843
+      smallSlimesSpriteSheet_4: 6830791353369265498
+      smallSlimesSpriteSheet_40: 3482415217239945062
+      smallSlimesSpriteSheet_41: 2376126900423287114
+      smallSlimesSpriteSheet_42: -3627351689369904430
+      smallSlimesSpriteSheet_43: -4389862065587116703
+      smallSlimesSpriteSheet_44: -8273774941402404551
+      smallSlimesSpriteSheet_45: 4401751176132100486
+      smallSlimesSpriteSheet_46: -4975523669252119462
+      smallSlimesSpriteSheet_47: 7795368259767518737
+      smallSlimesSpriteSheet_48: 9031587336327725112
+      smallSlimesSpriteSheet_49: -4481538515205196924
+      smallSlimesSpriteSheet_5: 6966398524009040115
+      smallSlimesSpriteSheet_50: -2986982630907436542
+      smallSlimesSpriteSheet_51: -8888821168845650265
+      smallSlimesSpriteSheet_52: 4327598775632461457
+      smallSlimesSpriteSheet_53: -577768021560067305
+      smallSlimesSpriteSheet_54: -5711478210903688081
+      smallSlimesSpriteSheet_55: 5288932069961394401
+      smallSlimesSpriteSheet_56: -9183667009134691566
+      smallSlimesSpriteSheet_57: 6210580521625310647
+      smallSlimesSpriteSheet_58: 3468485377334936327
+      smallSlimesSpriteSheet_59: 6368608174736372413
+      smallSlimesSpriteSheet_6: -129626508344266927
+      smallSlimesSpriteSheet_60: 988549775741774650
+      smallSlimesSpriteSheet_61: -812654490234122248
+      smallSlimesSpriteSheet_62: 4677380520373215283
+      smallSlimesSpriteSheet_63: -4025448073512517561
+      smallSlimesSpriteSheet_7: 3299657157102377914
+      smallSlimesSpriteSheet_8: -3292219620994458700
+      smallSlimesSpriteSheet_9: -7212537301742107852
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,7 +1,8 @@
-﻿using UnityEngine;
-using UnityEngine.InputSystem;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class InputManager : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class InputManager : MonoBehaviour
     private Sprite dragBase, dragMid, dragTop;
     [Range(0f, 1f)] public float previewAlpha = 0.5f;
 
+    [SerializeField] private Tilemap forbiddenTilemap; // assign your "NoTower" tilemap
+    [SerializeField] private string[] forbiddenTags = { "UI", "Tower", "NoPlace" };
+   // [SerializeField] private LayerMask forbiddenLayers; // optional, currently commented out
+    [SerializeField] private float towerRadius;
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -83,13 +88,28 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
-        // Move drag preview with mouse
         if (dragPreview != null)
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             dragPreview.transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
+
+            // Check if placement is valid
+            bool canPlace = CanPlaceHere(mousePos);
+
+            // Update all preview layers
+            SpriteRenderer[] layers = dragPreview.GetComponentsInChildren<SpriteRenderer>();
+            foreach (var sr in layers)
+            {
+                Color c = sr.color;
+                if (canPlace)
+                    c = new Color(1f, 1f, 1f, previewAlpha); // normal (white)
+                else
+                    c = new Color(1f, 0f, 0f, previewAlpha); // red if invalid
+                sr.color = c;
+            }
         }
     }
+
 
     private void OnClick()
     {
@@ -151,6 +171,7 @@ public class InputManager : MonoBehaviour
 
         SpriteRenderer sr = layer.AddComponent<SpriteRenderer>();
         sr.sprite = sprite;
+        sr.sortingLayerName = "UI";   // must exist in Sorting Layers
         sr.sortingOrder = 999 + order;
 
         // All layers use same alpha
@@ -160,10 +181,40 @@ public class InputManager : MonoBehaviour
     }
 
 
-
     private bool CanPlaceHere(Vector2 pos)
     {
-        // TODO: collision/grid checks
+        /*
+        // Check forbidden layers (optional if using tags)
+        Collider2D hit = Physics2D.OverlapCircle(pos, towerPlacementRadius, forbiddenLayers);
+        if (hit != null) return false;
+        */
+
+        // 1. Check forbidden tilemap
+       /*
+        if (forbiddenTilemap != null)
+        {
+            Vector3Int cellPos = forbiddenTilemap.WorldToCell(pos);
+            TileBase tile = forbiddenTilemap.GetTile(cellPos);
+            if (tile != null) return false; // tile exists → cannot place
+        }
+        */
+        // 2. Check for colliders at the mouse position using tags
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(pos, towerRadius); // radius ~ tower footprint - capsule collider
+        foreach (var col in colliders)
+        {
+            foreach (var tag in forbiddenTags)
+            {
+                if (col.CompareTag(tag))
+                    return false;
+            }
+        }
+
+        // 3. Check if position is inside camera bounds
+        Vector3 viewportPos = Camera.main.WorldToViewportPoint(pos);
+        if (viewportPos.x < 0 || viewportPos.x > 1 || viewportPos.y < 0 || viewportPos.y > 1)
+            return false;
+
         return true;
     }
+
 }

@@ -125,33 +125,61 @@ public class Enemy : MonoBehaviour
 
     void MoveAlongSpline()
     {
-        if (path == null) return;
+        if (path == null || currentSegment >= path.SegmentCount) return;
 
-        float currentSpeed = baseSpeed * slowMultiplier;
+        float distanceToMove = baseSpeed * slowMultiplier * Time.deltaTime;
 
-        if (currentSegment >= path.SegmentCount)
+        while (distanceToMove > 0f && currentSegment < path.SegmentCount)
         {
-            gm.PlayerTakeDamage(1);
-            Destroy(gameObject);
-            return;
+            // Approximate the segment length
+            float segmentLength = ApproximateSegmentLength(currentSegment);
+
+            // Calculate how much 't' to advance to move the distance
+            float deltaT = distanceToMove / segmentLength;
+            t += deltaT;
+
+            if (t >= 1f)
+            {
+                // Move leftover distance to next segment
+                distanceToMove = (t - 1f) * segmentLength;
+                t = 0f;
+                currentSegment++;
+
+                if (currentSegment >= path.SegmentCount)
+                {
+                    transform.position = path.GetPoint(path.SegmentCount - 1, 1f);
+                    gm.PlayerTakeDamage(1);
+                    Destroy(gameObject);
+                    return;
+                }
+            }
+            else
+            {
+                distanceToMove = 0f; // We've moved the full distance
+            }
+
+            transform.position = path.GetPoint(currentSegment, t);
         }
-
-        float segmentLength = Vector3.Distance(
-            path.GetPoint(currentSegment, 0f),
-            path.GetPoint(currentSegment, 1f)
-        );
-
-        t += (currentSpeed * Time.deltaTime) / segmentLength;
-
-        if (t >= 1f)
-        {
-            t = 0f;
-            currentSegment++;
-            return;
-        }
-
-        transform.position = path.GetPoint(currentSegment, t);
     }
+
+    // Approximate the length of a segment (from t=0 to t=1)
+    float ApproximateSegmentLength(int segment, int steps = 10)
+    {
+        float length = 0f;
+        Vector3 prev = path.GetPoint(segment, 0f);
+
+        for (int i = 1; i <= steps; i++)
+        {
+            float t = i / (float)steps;
+            Vector3 next = path.GetPoint(segment, t);
+            length += Vector3.Distance(prev, next);
+            prev = next;
+        }
+
+        return length;
+    }
+
+
 
     // ===========================
     // Damage

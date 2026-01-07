@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - UI
+  - Tower
+  - NoPlace
   layers:
   - Default
   - TransparentFX
@@ -46,6 +49,9 @@ TagManager:
     locked: 0
   - name: Towers & Enemies
     uniqueID: 1279350695
+    locked: 0
+  - name: Projectiles
+    uniqueID: 2162338943
     locked: 0
   - name: UI
     uniqueID: 854473121
