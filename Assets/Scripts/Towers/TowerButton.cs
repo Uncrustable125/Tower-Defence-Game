@@ -12,7 +12,13 @@ public class TowerButton : MonoBehaviour
     public void InitTowerButton(TowerData data)
     {
         TMP_Text buttonText = GetComponentInChildren<TMP_Text>();
-        Image img = GetComponent<Image>();
+
+        Image img = null;
+        foreach (Transform child in transform)
+        {
+            img = child.GetComponent<Image>();
+            if (img != null) break; // stops at the first (and only) child Image
+        }
 
         if (data != null)
         {
@@ -47,7 +53,6 @@ public class TowerButton : MonoBehaviour
     // Called by UI Button OnPointerDown
     public void BeginDrag()
     {
-        Debug.Log("BeginDrag fired");
         if (towerData == null) return;
         InputManager.Instance.StartTowerDrag(towerPrefab, towerData);
     }
@@ -55,7 +60,6 @@ public class TowerButton : MonoBehaviour
     // Called by UI Button OnPointerUp
     public void EndDrag()
     {
-        Debug.Log("EndDrag fired");
         if (towerData == null) return;
         InputManager.Instance.EndTowerDrag();
     }

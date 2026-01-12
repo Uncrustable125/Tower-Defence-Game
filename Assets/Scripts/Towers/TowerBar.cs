@@ -30,19 +30,7 @@ public class TowerBar: MonoBehaviour
             child.SetActive(true);
             UpgradeButton button = upgradeButtons[i];
 
-            /*
-
-            Upgrade upgrade;
-            if (i < tower.upgrades.Count)
-            {
-                upgrade = tower.upgrades[i];
-            }
-            else
-            {
-                upgrade = null;
-            }*/
-
-            Upgrade upgrade = (i < tower.upgrades.Count && tower.upgrades[i].available) ? tower.upgrades[i] : null;
+              Upgrade upgrade = (i < tower.upgrades.Count && tower.upgrades[i].available) ? tower.upgrades[i] : null;
             button.InitUpgradeButton(tower, upgrade);
 
         }

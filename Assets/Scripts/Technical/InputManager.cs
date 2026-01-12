@@ -17,11 +17,11 @@ public class InputManager : MonoBehaviour
     private TowerData towerData;
     [SerializeField] TowerBar towerBar;
     private Sprite dragBase, dragMid, dragTop;
-    [Range(0f, 1f)] public float previewAlpha = 0.5f;
+    [Range(0f, 1f)] float previewAlpha = 0.5f;
 
-    [SerializeField] private Tilemap forbiddenTilemap; // assign your "NoTower" tilemap
-    [SerializeField] private string[] forbiddenTags = { "UI", "Tower", "NoPlace" };
-   // [SerializeField] private LayerMask forbiddenLayers; // optional, currently commented out
+
+   // private float previewYOffset = 0.25f; // adjust as needed
+    private string[] forbiddenTags = { "UI", "NoPlace" };
     [SerializeField] private float towerRadius;
     private void Awake()
     {
@@ -57,6 +57,8 @@ public class InputManager : MonoBehaviour
                 yOffset = i * 0.32f; // fallback if prefab has fewer layers
 
             CreatePreviewLayer(data.baseSprites[i], i, new Vector2(0, yOffset), dragPreview.transform);
+            dragPreview.transform.localScale = new Vector3(.8f, 1f, 1f); // or some fixed scale
+
         }
     }
 
@@ -86,6 +88,7 @@ public class InputManager : MonoBehaviour
         towerData = null;
     }
 
+
     private void Update()
     {
         if (dragPreview != null)
@@ -109,6 +112,7 @@ public class InputManager : MonoBehaviour
             }
         }
     }
+
 
 
     private void OnClick()
@@ -183,21 +187,6 @@ public class InputManager : MonoBehaviour
 
     private bool CanPlaceHere(Vector2 pos)
     {
-        /*
-        // Check forbidden layers (optional if using tags)
-        Collider2D hit = Physics2D.OverlapCircle(pos, towerPlacementRadius, forbiddenLayers);
-        if (hit != null) return false;
-        */
-
-        // 1. Check forbidden tilemap
-       /*
-        if (forbiddenTilemap != null)
-        {
-            Vector3Int cellPos = forbiddenTilemap.WorldToCell(pos);
-            TileBase tile = forbiddenTilemap.GetTile(cellPos);
-            if (tile != null) return false; // tile exists → cannot place
-        }
-        */
         // 2. Check for colliders at the mouse position using tags
         Collider2D[] colliders = Physics2D.OverlapCircleAll(pos, towerRadius); // radius ~ tower footprint - capsule collider
         foreach (var col in colliders)
