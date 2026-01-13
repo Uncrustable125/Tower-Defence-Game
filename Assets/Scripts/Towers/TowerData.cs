@@ -12,6 +12,7 @@ public class TowerData : ScriptableObject
     public float damage = 10f;
     public float projectileSpeed = 15f;
     public float projectileScale;
+    //public int size
 
     [Header("Cost & Visuals")]
     public int cost = 10;
