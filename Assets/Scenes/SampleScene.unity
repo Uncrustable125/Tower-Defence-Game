@@ -218,7 +218,7 @@ RectTransform:
   - {fileID: 1443286866}
   - {fileID: 1378372199}
   - {fileID: 1625314412}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 811183134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -19887,6 +19887,7 @@ Transform:
   - {fileID: 1458870057}
   - {fileID: 856334838}
   - {fileID: 1596383118}
+  - {fileID: 26688450}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &811183135
@@ -24749,6 +24750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 856334838}
     m_Modifications:
+    - target: {fileID: 4287341454236395292, guid: 73183b4ee7de86a4492504d8676efbae, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5034149744640237862, guid: 73183b4ee7de86a4492504d8676efbae, type: 3}
       propertyPath: m_Name
       value: Projectile
@@ -24919,6 +24924,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 811183134}
-  - {fileID: 26688450}
   - {fileID: 1890073307}
   - {fileID: 130599017}

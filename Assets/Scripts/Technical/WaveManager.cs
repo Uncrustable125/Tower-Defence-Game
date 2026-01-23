@@ -52,7 +52,9 @@ public class WaveManager : MonoBehaviour
         Enemy enemyScript = e.GetComponent<Enemy>();
         if (enemyScript != null)
         {
-            enemyScript.Init(splinePath, gameManager);
+            EnemyData enemyData = EnemyDatabase.Instance.GetRandom();
+            int level = Random.Range(0, 8);
+            enemyScript.Init(enemyData, splinePath, gameManager, level);
         }
         else
         {

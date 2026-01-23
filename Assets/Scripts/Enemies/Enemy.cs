@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(SpriteRenderer))]
+
 public class Enemy : MonoBehaviour
 {
-    public float speed = 3f;
-    public float health = 20f;
-
+    public float speed;
+    public float health;
+    public int level;
     private float t;
     private int currentSegment;
 
@@ -24,6 +26,55 @@ public class Enemy : MonoBehaviour
 
     private const float MAX_SLOW = 0.8f; // 80% max slow
 
+    EnemyData enemyData;
+    private SpriteRenderer sr;
+
+    // 5 animation frames → map to 3 sprites
+    private static readonly int[] frameMap = { 0, 1, 2, 1, 0 };
+
+    void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+    void ScaleByLevel()
+    {
+        /*float healthMultiplier = 1f + (level - 1) * 0.25f;
+        float speedMultiplier = 1f + (level - 1) * 0.05f;
+
+        health *= healthMultiplier;
+        speed *= speedMultiplier;*/
+        health *= level;
+        float speedMultiplier = 1f + (level - 1) * 0.25f;
+        speed *= speedMultiplier;
+
+    }
+
+    // CALLED BY ANIMATION EVENTS
+    public void SetFrame(int animFrame)
+    {
+        int spriteIndex = frameMap[animFrame];
+        Sprite sprite = enemyData.GetSprite(spriteIndex, level);
+
+        if (sprite != null)
+            sr.sprite = sprite;
+    }
+
+    public void Init(EnemyData enemyData, SplinePath spline, GameManager gameManager, int level)
+    {
+        this.enemyData = enemyData;
+        this.level = level;
+        this.speed = enemyData.speed;
+        this.health = enemyData.health;
+        baseSpeed = speed;
+        path = spline;
+        gm = gameManager;
+        currentSegment = 0;
+        t = 0;
+        transform.position = path.points[0].position;
+        ScaleByLevel();
+
+    }
+
     private class ActiveSlow
     {
         public float multiplier;
@@ -32,10 +83,6 @@ public class Enemy : MonoBehaviour
 
     private Dictionary<object, ActiveSlow> activeSlows = new();
 
-    void Start()
-    {
-        baseSpeed = speed;
-    }
 
     // ---------------------------
     // Slow API (used by towers / projectiles)
@@ -108,14 +155,6 @@ public class Enemy : MonoBehaviour
     // Movement
     // ===========================
 
-    public void Init(SplinePath spline, GameManager gameManager)
-    {
-        path = spline;
-        gm = gameManager;
-        currentSegment = 0;
-        t = 0;
-        transform.position = path.points[0].position;
-    }
 
     void Update()
     {
@@ -127,7 +166,7 @@ public class Enemy : MonoBehaviour
     {
         if (path == null || currentSegment >= path.SegmentCount) return;
 
-        float distanceToMove = baseSpeed * slowMultiplier * Time.deltaTime;
+        float distanceToMove = speed * slowMultiplier * Time.deltaTime;
 
         while (distanceToMove > 0f && currentSegment < path.SegmentCount)
         {
@@ -178,8 +217,6 @@ public class Enemy : MonoBehaviour
 
         return length;
     }
-
-
 
     // ===========================
     // Damage
