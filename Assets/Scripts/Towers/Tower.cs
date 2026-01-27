@@ -34,7 +34,7 @@ public class Tower : MonoBehaviour
     [SerializeField] LineRenderer rangeRenderer;
     [SerializeField] int circleSegments = 64;
 
-    [SerializeField] private TowerData towerData;
+    [SerializeField] public TowerData towerData;
     public List<Upgrade> upgrades;
 
     private bool isSelected;

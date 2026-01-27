@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2121ef984828504a8a44b69ddd2f767, type: 3}
   m_Name: Buff Slow
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Give Towers Slow
+  upgradeName: Slow
   description: Provides a Buff that slightly slows Enemies
   range: 0
   fireRate: 0

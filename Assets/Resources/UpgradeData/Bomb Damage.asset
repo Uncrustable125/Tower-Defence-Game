@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2121ef984828504a8a44b69ddd2f767, type: 3}
   m_Name: Bomb Damage
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Bomb Damage
+  upgradeName: Damage
   description: Increase the Damage of the Bomb Tower
   range: 0
   fireRate: 0
@@ -20,15 +20,21 @@ MonoBehaviour:
   projectileSpeed: 0
   projectileScale: 0
   cost: 10
-  sprite: {fileID: 0}
-  hasAOE: 0
+  sprite: {fileID: 1781589789572410292, guid: 555fb3adb5a91994c88ab6d7a99797be, type: 3}
   aoeRadius: 0
-  appliesSlow: 0
   slowMultiplier: 0
   slowDuration: 0
-  isBuffTower: 0
   buffRange: 0
   fireRateMultiplier: 0
+  hasAOE:
+    willOverrideBoolValue: 0
+    onForTrue: 0
+  appliesSlow:
+    willOverrideBoolValue: 0
+    onForTrue: 0
+  isBuffTower:
+    willOverrideBoolValue: 0
+    onForTrue: 0
   aquired: 0
   available: 0
   prerequisites: []

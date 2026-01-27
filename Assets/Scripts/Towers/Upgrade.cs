@@ -32,6 +32,7 @@ public class Upgrade
 
     public bool aquired, available;
     public List<UpgradeData> prerequisites;
+    public UpgradeData upgradeData;
     public Upgrade(UpgradeData uData)
     {
         if (uData == null)
@@ -39,7 +40,7 @@ public class Upgrade
             Debug.LogError("UpgradeData is null!");
             return;
         }
-
+        upgradeData = uData;
         // Basic info
         upgradeName = uData.upgradeName;
         description = uData.description;

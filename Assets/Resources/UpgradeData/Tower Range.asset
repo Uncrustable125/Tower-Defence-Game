@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2121ef984828504a8a44b69ddd2f767, type: 3}
   m_Name: Tower Range
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Tower Range
+  upgradeName: Range
   description: Increases the Range of the Tower
   range: 2
   fireRate: 0
@@ -21,14 +21,20 @@ MonoBehaviour:
   projectileScale: 0
   cost: 130
   sprite: {fileID: 0}
-  hasAOE: 0
   aoeRadius: 0
-  appliesSlow: 0
   slowMultiplier: 0
   slowDuration: 0
-  isBuffTower: 0
   buffRange: 0
   fireRateMultiplier: 0
+  hasAOE:
+    willOverrideBoolValue: 0
+    onForTrue: 0
+  appliesSlow:
+    willOverrideBoolValue: 0
+    onForTrue: 0
+  isBuffTower:
+    willOverrideBoolValue: 0
+    onForTrue: 0
   aquired: 0
   available: 0
   prerequisites: []

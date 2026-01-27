@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2121ef984828504a8a44b69ddd2f767, type: 3}
-  m_Name: Buff Fire Rate 1
+  m_Name: Buff Fire Rate
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Buff Fire Rate 1
+  upgradeName: 
   description: Increases the Fire Rate Buff
   range: 0
   fireRate: 0

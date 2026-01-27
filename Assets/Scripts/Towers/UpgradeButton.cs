@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UpgradeButton : MonoBehaviour
@@ -11,7 +12,11 @@ public class UpgradeButton : MonoBehaviour
     TMP_Text buttonText;
     public void InitUpgradeButton(Tower tower, Upgrade upgrade)
     {
-        img = GetComponent<Image>();
+        foreach (Transform child in transform)
+        {
+            img = child.GetComponent<Image>();
+            if (img != null) break; // stops at the first (and only) child Image
+        }
         buttonText = GetComponentInChildren<TMP_Text>();
         currentTower = tower;
         UpdateButton(upgrade);
@@ -21,7 +26,7 @@ public class UpgradeButton : MonoBehaviour
         if (upgrade != null)
         {
             this.upgrade = upgrade;
-            // img.sprite = combinedSprite;
+            img.sprite = upgrade.upgradeData.sprite;
             img.preserveAspect = true;
             buttonText.text = upgrade.upgradeName;
             Color c = img.color;
@@ -51,7 +56,7 @@ public class UpgradeButton : MonoBehaviour
         {
             //Not enough money
         }
-
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
 

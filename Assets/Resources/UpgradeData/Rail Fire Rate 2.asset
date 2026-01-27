@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2121ef984828504a8a44b69ddd2f767, type: 3}
   m_Name: Rail Fire Rate 2
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Rail Fire Rate 2
+  upgradeName: Fire Rate 2
   description: Increases the Fire Rate of the Railgun even further
   range: 0
   fireRate: 0.2
