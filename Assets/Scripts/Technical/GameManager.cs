@@ -10,18 +10,37 @@ public class GameManager : MonoBehaviour
     [SerializeField] UIManager uiManager;
     public static GameManager Instance;
     bool gameover = false;
+    private bool gameStarted = false;
+
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
         else
+        {
             Destroy(gameObject);
-
-        EnemyDatabase db = EnemyDatabase.Instance;
+            return;
+        }
     }
-    void Start()
+    // Async Start ensures levels are loaded before game starts
+    private async void Start()
     {
+        // Wait for LevelDatabase to finish loading all levels
+        await LevelDatabase.Instance.EnsureLoadedAsync();
+
+        Debug.Log("Levels ready!");
+        StartGame();
+    }
+
+
+
+    void StartGame()
+    {
+        if (gameStarted) return;
+        gameStarted = true;
+
         UpdateUI();
+
     }
     private void Update()
     {

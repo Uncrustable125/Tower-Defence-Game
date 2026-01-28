@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8513d0dcf2c5b4f9fa9776a11c2b85, type: 3}
+  m_Name: LevelData
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: 
+  stages:
+  - waves:
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 0
+  - waves:
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 0
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 0
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 1
+  - waves:
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 20
+        level: 1
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 30
+        level: 0
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 2
+  - waves:
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 30
+        level: 1
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 30
+        level: 0
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 2
+    - spawns:
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 30
+        level: 0
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 2
+      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
+        quantity: 15
+        level: 2

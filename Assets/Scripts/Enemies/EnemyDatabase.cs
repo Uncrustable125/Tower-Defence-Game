@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class EnemyDatabase
 {
@@ -18,25 +20,23 @@ public class EnemyDatabase
     private Dictionary<string, EnemyData> enemiesById = new();
     private Dictionary<EnemyType, List<EnemyData>> enemiesByType = new();
 
-    private EnemyDatabase()
-    {
-        LoadEnemies();
-    }
+    private EnemyDatabase() { }
 
-    private void LoadEnemies()
+    // -------------------------
+    // Async Load
+    // -------------------------
+    public AsyncOperationHandle<IList<EnemyData>> LoadEnemiesAsync(System.Action onComplete = null)
     {
         allEnemies.Clear();
         enemiesById.Clear();
         enemiesByType.Clear();
 
-        EnemyData[] loaded = Resources.LoadAll<EnemyData>("EnemyData");
-
-        foreach (var enemy in loaded)
+        // Assuming all EnemyData ScriptableObjects are in an Addressables group
+        var handle = Addressables.LoadAssetsAsync<EnemyData>("EnemyData", enemy =>
         {
-            // Store all
+            // Called for each loaded EnemyData
             allEnemies.Add(enemy);
 
-            // By ID
             if (!string.IsNullOrEmpty(enemy.enemyId))
             {
                 if (!enemiesById.ContainsKey(enemy.enemyId))
@@ -45,45 +45,42 @@ public class EnemyDatabase
                     Debug.LogWarning($"Duplicate Enemy ID: {enemy.enemyId}");
             }
 
-            // By Type
             if (!enemiesByType.ContainsKey(enemy.type))
                 enemiesByType[enemy.type] = new List<EnemyData>();
 
             enemiesByType[enemy.type].Add(enemy);
-        }
+        });
 
-        Debug.Log($"[EnemyDatabase] Loaded {allEnemies.Count} enemies");
+        handle.Completed += _ =>
+        {
+            Debug.Log($"[EnemyDatabase] Loaded {allEnemies.Count} enemies");
+            onComplete?.Invoke();
+        };
+
+        return handle;
     }
 
     // -------------------------
     // Query API
     // -------------------------
-
     public EnemyData GetById(string id)
     {
         enemiesById.TryGetValue(id, out var enemy);
         return enemy;
     }
 
-    public List<EnemyData> GetByType(EnemyType type)
+
+
+    
+
+    // -------------------------
+    // Optional: Cleanup
+    // -------------------------
+    public void ReleaseEnemies()
     {
-        if (enemiesByType.TryGetValue(type, out var list))
-            return list;
-
-        return new List<EnemyData>();
-    }
-
-    public EnemyData GetRandom()
-    {
-        if (allEnemies.Count == 0) return null;
-        return allEnemies[Random.Range(0, allEnemies.Count)];
-    }
-
-    public EnemyData GetRandomByType(EnemyType type)
-    {
-        var list = GetByType(type);
-        if (list.Count == 0) return null;
-
-        return list[Random.Range(0, list.Count)];
+        Addressables.Release<IList<EnemyData>>(allEnemies);
+        allEnemies.Clear();
+        enemiesById.Clear();
+        enemiesByType.Clear();
     }
 }
