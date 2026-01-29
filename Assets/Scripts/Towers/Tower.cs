@@ -42,6 +42,9 @@ public class Tower : MonoBehaviour
 
     private const float MAX_FIRERATE_BONUS = 2.0F; // 200% max BUFF 300% FR total
 
+    [SerializeField] private int orderMultiplier = 100;
+    private SpriteRenderer[] renderers;
+    private LocalOrder[] orders;
 
     // =============================
     // Slow aura tracking
@@ -61,6 +64,17 @@ public class Tower : MonoBehaviour
     // -----------------------------
     // Initialization
     // -----------------------------
+
+
+
+    void Awake()
+    {
+        renderers = GetComponentsInChildren<SpriteRenderer>();
+        orders = GetComponentsInChildren<LocalOrder>();
+
+        
+    }
+
     public void Init(TowerData towerData)
     {
         this.towerData = towerData;
@@ -83,22 +97,45 @@ public class Tower : MonoBehaviour
         projectileScale = towerData.projectileScale;
 
         upgrades = new List<Upgrade>();
+
         for (int i = 0; i < towerData.upgrades.Count; i++)
             upgrades.Add(new Upgrade(towerData.upgrades[i]));
-        topSprite.sprite = towerData.topSprite;
-        midSprite.sprite = towerData.midSprite;
-        midSprite2.sprite = towerData.midSprite2;
-        botSprite.sprite = towerData.botSprite;
-
-        // Adjust positions if midSprite2 is missing
-        if (midSprite2.sprite == null)
-        {
-            topSprite.transform.localPosition = midSprite2.transform.localPosition;
-        }
-
-
+       
+        SetupSprites();
         SetupRangeRenderer();
     }
+
+    // -----------------------------
+    // Sprites and Sorting Order
+    // -----------------------------
+    public void SetupSprites()
+    {
+        int baseOrder = Mathf.RoundToInt(-transform.position.y * orderMultiplier);
+        int iterator = 0;
+        foreach (var sr in renderers)
+        {
+            int localOffset = 0;
+            LocalOrder lo = sr.GetComponent<LocalOrder>();
+            if (lo != null)
+            {
+                lo.value = iterator;
+                localOffset = lo.value;
+            }
+            sr.sortingOrder = baseOrder + localOffset;
+            if (iterator < towerData.baseSprites.Length && towerData.baseSprites[iterator] != null)
+            {
+                sr.sprite = towerData.baseSprites[iterator];
+            }
+
+            //Not sure if I will need this or not
+            /*else
+            {
+                topSprite.transform.localPosition = midSprite2.transform.localPosition;
+            }*/
+            iterator++;
+        }
+    }
+
 
     // -----------------------------
     // Update

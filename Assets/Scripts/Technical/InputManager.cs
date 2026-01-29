@@ -78,12 +78,12 @@ public class InputManager : MonoBehaviour
                 Tower newTower = newTowerObject.GetComponent<Tower>();
                 newTower.Init(towerData);
                 CapsuleCollider2D capsule = newTower.GetComponent<CapsuleCollider2D>();
-                if (newTower.towerData.midSprite2  != null) //LARGE TOWER
+                if (newTower.towerData.midSprite  != null) //LARGE TOWER
                 {
                     capsule.size = new Vector2(0.801920295f, 1.80445623f);
                     capsule.offset = new Vector2(0.0196710229f, 0.539305568f);
                 }
-                else if(newTower.towerData.midSprite != null) //MEDIUM TOQWER
+                else if(newTower.towerData.midSprite2 != null) //MEDIUM TOQWER
                 {
                     capsule.size = new Vector2(0.801920295f, 1.43710947f);
                     capsule.offset = new Vector2(0.0196710229f, 0.347979069f);
@@ -137,34 +137,42 @@ public class InputManager : MonoBehaviour
     {
         if (dragPreview != null) return;
 
-        // If clicking UI, do NOT raycast world
-        if (IsPointerOverUI())
-            return;
+        if (IsPointerOverUI()) return;
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(
-    Mouse.current.position.ReadValue()
-);
+            Mouse.current.position.ReadValue()
+        );
 
-        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+        // Raycast all colliders at mouse position
+        RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos, Vector2.zero);
 
-        // Try to select a tower
-        if (hit.collider != null)
+        Tower towerHit = null;
+
+        foreach (var hit in hits)
         {
-            Tower tower = hit.collider.GetComponent<Tower>();
-            if (tower != null) //We Hit a Tower
-            {
-                if (selectedTower != null && selectedTower != tower)
-                    selectedTower.SetSelected(false);
+            if (hit.collider == null) continue;
 
-                selectedTower = tower;
-                selectedTower.SetSelected(true);
-                towerBar.ShowUpgradeMenu(tower);
-                return;
+            Tower tower = hit.collider.GetComponent<Tower>();
+            if (tower != null)
+            {
+                towerHit = tower;
+                break; // stop at first tower found
             }
         }
 
-        // If we get here, we clicked:
-        // - empty space
-        // - OR a non-tower collider
+        if (towerHit != null)
+        {
+            // Select tower
+            if (selectedTower != null && selectedTower != towerHit)
+                selectedTower.SetSelected(false);
+
+            selectedTower = towerHit;
+            selectedTower.SetSelected(true);
+            towerBar.ShowUpgradeMenu(towerHit);
+            return;
+        }
+
+        // Clicked empty space or non-tower
         if (selectedTower != null)
         {
             selectedTower.SetSelected(false);
@@ -172,6 +180,7 @@ public class InputManager : MonoBehaviour
             towerBar.ShowTowerMenu();
         }
     }
+
 
     private bool IsPointerOverUI()
     {

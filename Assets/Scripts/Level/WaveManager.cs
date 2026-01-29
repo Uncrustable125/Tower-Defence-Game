@@ -32,40 +32,55 @@ public class WaveManager : MonoBehaviour
             return;
         }
 
-        StartCoroutine(StartStage());
+        StartCoroutine(Stages());
     }
 
-    IEnumerator StartStage()
+
+
+    //ADD USER CONTROL FOR NEXT STAGE
+    IEnumerator Stages()
     {
+        int stageIndex = 0;
+
         foreach (var stage in currentLevel.Stages)
         {
-            yield return StartCoroutine(StartWave(stage));
+            GameManager.Instance.UpdateStage(stageIndex + 1);
+            yield return StartCoroutine(Waves(stage, stageIndex));
             yield return new WaitForSeconds(timeBetweenStages);
+
+           // Debug.Log($"Stage {stageIndex} complete");
+            stageIndex++;
         }
     }
 
-    IEnumerator StartWave(Stage stage)
+    IEnumerator Waves(Stage stage, int stageIndex)
     {
+        int waveIndex = 0;
+
         foreach (var wave in stage.waves)
         {
-            yield return StartCoroutine(StartSpawn(wave));
+            Spawns(wave, stageIndex, waveIndex);
             yield return new WaitForSeconds(timeBetweenWaves);
+
+            //Debug.Log($"Stage {stageIndex} - Wave {waveIndex} complete");
+            waveIndex++;
         }
     }
 
-    IEnumerator StartSpawn(Wave wave)
+    void Spawns(Wave wave, int stageIndex, int waveIndex) //No coroutine I think
     {
+        int spawnIndex = 0;
+
         foreach (var spawn in wave.spawns)
         {
-            yield return StartCoroutine(SpawnEnemy(spawn));
+            StartCoroutine(SpawnEnemy(spawn, stageIndex, waveIndex, spawnIndex));
+            spawnIndex++;
         }
     }
 
-
-
-    IEnumerator SpawnEnemy(SpawnData spawn)
+    IEnumerator SpawnEnemy(SpawnData spawn, int stageIndex, int waveIndex, int spawnIndex)
     {
-        for (int i = 0; i < spawn.quantity; i++)
+        for (int enemyIndex = 0; enemyIndex < spawn.quantity; enemyIndex++)
         {
             GameObject enemyObject = Instantiate(enemyPrefab);
             Enemy enemy = enemyObject.GetComponent<Enemy>();
@@ -78,9 +93,15 @@ public class WaveManager : MonoBehaviour
             {
                 Debug.LogWarning("Enemy prefab is missing Enemy component");
             }
+            //enemies are spawning one Spawn at a time and I want them to come together
+            //So will need multiple coroutines
+            //Debug.Log(
+          //      $"Stage {stageIndex}, Wave {waveIndex}, Spawn {spawnIndex}, Enemy {enemyIndex}"
+          //  );
 
             yield return new WaitForSeconds(timeBetweenEnemies);
         }
     }
 
 }
+//Why are enemies so slow

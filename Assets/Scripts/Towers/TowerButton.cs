@@ -26,8 +26,8 @@ public class TowerButton : MonoBehaviour
             towerSprites = new Sprite[]
             {
         data.botSprite,
-        data.midSprite,
         data.midSprite2,
+        data.midSprite,
         data.topSprite
             };
             Sprite combinedSprite =
@@ -43,11 +43,11 @@ public class TowerButton : MonoBehaviour
             
             //Scales image to sprite size
             RectTransform rt = img.rectTransform;
-            if (data.midSprite == null) // for small towers not implemented yet
+            if (data.midSprite2 == null) // for small towers not implemented yet
             {
 
             }
-            else if(data.midSprite2 == null) // reg towers
+            else if(data.midSprite == null) // reg towers
             {
                 rt.sizeDelta = new Vector2(rt.sizeDelta.x, 130f);
                 rt.anchoredPosition += new Vector2(0f, 8f);

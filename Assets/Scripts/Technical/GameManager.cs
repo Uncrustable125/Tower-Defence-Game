@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int lives, money;
-    [SerializeField] TextMeshProUGUI healthText, goldText;
+
     [SerializeField] UIManager uiManager;
     public static GameManager Instance;
     bool gameover = false;
@@ -74,12 +74,15 @@ public class GameManager : MonoBehaviour
 
     void UpdateUI()
     {
-        healthText.text = lives.ToString();
-        goldText.text = money.ToString();
+        uiManager.UpdateLivesAndMoney(lives, money);
     }
     public void GameOver()
     {
         uiManager.StartGameOver();
+    }
+    public void UpdateStage(int stage)
+    {
+        uiManager.UpdateStage(stage);
     }
 
     public void RestartScene()

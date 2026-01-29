@@ -16,7 +16,7 @@ public class TowerData : ScriptableObject
 
     [Header("Cost & Visuals")]
     public int cost = 10;
-    public Sprite topSprite, midSprite, midSprite2, botSprite, Lv2, Lv3, magicSprite;
+    public Sprite topSprite, midSprite2, midSprite, botSprite, Lv2, Lv3, magicSprite;
     public Sprite[] baseSprites;
     public Animation towerAnimation;
 
@@ -37,8 +37,8 @@ public class TowerData : ScriptableObject
     {
         List<Sprite> tempList = new List<Sprite>();
         if (botSprite != null) tempList.Add(botSprite);
-        if (midSprite != null) tempList.Add(midSprite);
         if (midSprite2 != null) tempList.Add(midSprite2);
+        if (midSprite != null) tempList.Add(midSprite);
         if (topSprite != null) tempList.Add(topSprite);
 
         baseSprites = tempList.ToArray();

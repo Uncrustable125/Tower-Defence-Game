@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6520689576186981615}
   - component: {fileID: 95120986319819976}
+  - component: {fileID: 7473010877550686805}
   m_Layer: 0
   m_Name: TowerTop
   m_TagString: Untagged
@@ -110,7 +111,7 @@ SpriteRenderer:
   m_SortingLayerID: 1279350695
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 6588920489171202329, guid: 0cec052dd36c1f54f8930c5ce910245f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,9 +119,22 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7473010877550686805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072032067145991009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4583ad949f1f58c4ea51c1c875f7b0f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalOrder
+  value: 0
 --- !u!1 &2352173353964649065
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356894958800011892}
   - component: {fileID: 3910876417461143480}
+  - component: {fileID: 5865096322588357898}
   m_Layer: 5
   m_Name: TowerMiddle
   m_TagString: NoPlace
@@ -279,6 +294,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5865096322588357898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449345167174377015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4583ad949f1f58c4ea51c1c875f7b0f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalOrder
+  value: 0
 --- !u!1 &2456341942773439239
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8179426464677322929}
   - component: {fileID: 7704361056625177270}
+  - component: {fileID: 4137263418178087718}
   m_Layer: 5
   m_Name: TowerMiddle2
   m_TagString: Untagged
@@ -358,7 +387,7 @@ SpriteRenderer:
   m_SortingLayerID: 1279350695
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: -6615736840783997894, guid: 89749df2013a6484e97afee074857935, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -366,9 +395,22 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4137263418178087718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2456341942773439239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4583ad949f1f58c4ea51c1c875f7b0f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalOrder
+  value: 0
 --- !u!1 &8888045768919330918
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +484,7 @@ MonoBehaviour:
   rangeRenderer: {fileID: 2426037920535811689}
   circleSegments: 64
   towerData: {fileID: 0}
+  orderMultiplier: 100
 --- !u!70 &7280063837864116538
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -599,6 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4169824351196945933}
   - component: {fileID: 9117221211093504353}
+  - component: {fileID: 8900357807193922552}
   m_Layer: 0
   m_Name: TowerBottom
   m_TagString: Untagged
@@ -679,3 +723,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8900357807193922552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954228237603270094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4583ad949f1f58c4ea51c1c875f7b0f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalOrder
+  value: 0

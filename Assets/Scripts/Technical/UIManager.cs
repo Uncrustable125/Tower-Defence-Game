@@ -21,8 +21,19 @@ public class UIManager : MonoBehaviour
     public float textFadeDuration = 1f;
     public float canvasFadeDuration = 1f;
 
+    [Header("HUD")]
+    [SerializeField] TextMeshProUGUI healthText, goldText, stageText;
 
+    public void UpdateLivesAndMoney(int lives, int money)
+    {
+        healthText.text = lives.ToString();
+        goldText.text = money.ToString();
+    }
 
+    public void UpdateStage(int stage)
+    {
+        stageText.text = stage.ToString();
+    }
     public void StartGameOver()
     {
         StartCoroutine(GameOverSequence());
