@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -9,8 +10,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] UIManager uiManager;
     public static GameManager Instance;
-    bool gameover = false;
-    private bool gameStarted = false;
+    bool gameOver;
+    public GameState gameState;
+    public float timeScale;
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
         await LevelDatabase.Instance.EnsureLoadedAsync();
 
         Debug.Log("Levels ready!");
+        gameOver = false;
         StartGame();
     }
 
@@ -36,20 +39,36 @@ public class GameManager : MonoBehaviour
 
     void StartGame()
     {
-        if (gameStarted) return;
-        gameStarted = true;
+        gameState = GameState.Play;
+
 
         UpdateUI();
 
     }
     private void Update()
     {
-        if(lives <= 0 && !gameover)
+        if(lives <= 0 && !gameOver)
         {
-            gameover = true;
+            gameOver = true;
             GameOver();
         }
+        else if (!gameOver)
+            Time.timeScale = timeScale; // For Debugging
+
     }
+
+    public void Pause()
+    {
+        gameState = GameState.Pause;
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        gameState = GameState.Play;
+        Time.timeScale = 1f;
+    }
+
 
     public void PlayerTakeDamage(int amt)
     {
@@ -78,6 +97,8 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
+        Time.timeScale = 0f;
+
         uiManager.StartGameOver();
     }
     public void UpdateStage(int stage)
@@ -87,9 +108,21 @@ public class GameManager : MonoBehaviour
 
     public void RestartScene()
     {
-        // Get current active scene
-        Scene currentScene = SceneManager.GetActiveScene();
-        // Reload it
-        SceneManager.LoadScene(currentScene.name);
+        EventSystem.current.SetSelectedGameObject(null);
+        StartCoroutine(ReloadNextFrame());
     }
+
+    private IEnumerator ReloadNextFrame()
+    {
+        yield return new WaitForEndOfFrame();
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void AutoStartToggle()
+    {
+        autoStart = !autoStart;
+    }
+
 }
+
+public  enum GameState { Play, Pause, BetweenStages }

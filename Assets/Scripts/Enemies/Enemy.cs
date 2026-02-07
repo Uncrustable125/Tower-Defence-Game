@@ -20,6 +20,18 @@ public class Enemy : MonoBehaviour
     private float baseSpeed;
     private float slowMultiplier = 1f;
 
+
+    private void OnEnable()
+    {
+        WaveManager.Instance.RegisterEnemy();
+    }
+
+    private void OnDestroy()
+    {
+        WaveManager.Instance.UnregisterEnemy();
+    }
+
+
     // ===========================
     // Slow System
     // ===========================

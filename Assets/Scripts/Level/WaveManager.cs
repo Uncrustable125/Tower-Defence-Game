@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class WaveManager : MonoBehaviour
 {
     [Header("Enemy & Path")]
     public GameObject enemyPrefab;
-    public SplinePath splinePath;     
+    public SplinePath splinePath;
     public GameManager gameManager;
     EnemyList enemyList;
     LevelData currentLevel;
@@ -13,72 +14,94 @@ public class WaveManager : MonoBehaviour
     public float timeBetweenWaves = .5f;
     public float timeBetweenStages = 5f; //Will be replaced with a button
     public float timeBetweenEnemies = 0.5f;
+    public bool stageReady;
+    public bool autoStart;
+    bool stageFinished;
+    bool allDead;
+    private int aliveEnemies = 0;
+
+    public static WaveManager Instance;
+    public event Action OnStageFinished;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void RegisterEnemy()
+    {
+        aliveEnemies++; 
+        allDead = false;
+    }
+
+    public void UnregisterEnemy()
+    {
+        aliveEnemies--;
+
+        if (aliveEnemies <= 0)
+        {
+            allDead = true;         
+        }
+    }
+
 
 
     private async void Start()
     {
         await LevelDatabase.Instance.EnsureLoadedAsync();
-
-        currentLevel = LevelDatabase.Instance.GetLevel(World.World0, 0);
-        if (currentLevel == null)
-        {
-            Debug.LogError("Level not found!");
-            return;
-        }
-
-        if (enemyPrefab == null || splinePath == null || gameManager == null)
-        {
-            Debug.LogWarning("WaveManager: Missing references");
-            return;
-        }
-
-        StartCoroutine(Stages());
+        stageReady = true;
+        currentLevel = LevelDatabase.Instance.GetLevel(World.World0, 0); 
+        StartCoroutine(StartLevel());
     }
 
-
-
-    //ADD USER CONTROL FOR NEXT STAGE
-    IEnumerator Stages()
+     
+    IEnumerator StartLevel()
     {
         int stageIndex = 0;
-
         foreach (var stage in currentLevel.Stages)
         {
+            yield return new WaitUntil(() => stageReady);
+            stageReady = false;
+            allDead = false;
             GameManager.Instance.UpdateStage(stageIndex + 1);
-            yield return StartCoroutine(Waves(stage, stageIndex));
-            yield return new WaitForSeconds(timeBetweenStages);
-
-           // Debug.Log($"Stage {stageIndex} complete");
+            yield return StartCoroutine(StartStage(stage));
+            Debug.Log($"Stage {stageIndex} complete");
             stageIndex++;
+            stageReady = true; //Replace with User control and UI
         }
     }
 
-    IEnumerator Waves(Stage stage, int stageIndex)
+    IEnumerator StartStage(Stage stage) //This is one stage
     {
-        int waveIndex = 0;
-
         foreach (var wave in stage.waves)
         {
-            Spawns(wave, stageIndex, waveIndex);
+            yield return StartCoroutine(StartWave(wave));
+            yield return new WaitUntil(() => allDead);
             yield return new WaitForSeconds(timeBetweenWaves);
 
-            //Debug.Log($"Stage {stageIndex} - Wave {waveIndex} complete");
-            waveIndex++;
+                       
         }
     }
 
-    void Spawns(Wave wave, int stageIndex, int waveIndex) //No coroutine I think
+    IEnumerator StartWave(Wave wave)
     {
-        int spawnIndex = 0;
+        int remaining = wave.spawns.Count;
 
         foreach (var spawn in wave.spawns)
         {
-            StartCoroutine(SpawnEnemy(spawn, stageIndex, waveIndex, spawnIndex));
-            spawnIndex++;
+            StartCoroutine(SpawnEnemies(spawn, () =>
+            {
+                remaining--;
+            }));
         }
+
+        // Wait until ALL SpawnEnemies coroutines finish
+        yield return new WaitUntil(() => remaining == 0);
     }
 
-    IEnumerator SpawnEnemy(SpawnData spawn, int stageIndex, int waveIndex, int spawnIndex)
+
+
+    IEnumerator SpawnEnemies(SpawnData spawn, Action onComplete)
     {
         for (int enemyIndex = 0; enemyIndex < spawn.quantity; enemyIndex++)
         {
@@ -93,15 +116,9 @@ public class WaveManager : MonoBehaviour
             {
                 Debug.LogWarning("Enemy prefab is missing Enemy component");
             }
-            //enemies are spawning one Spawn at a time and I want them to come together
-            //So will need multiple coroutines
-            //Debug.Log(
-          //      $"Stage {stageIndex}, Wave {waveIndex}, Spawn {spawnIndex}, Enemy {enemyIndex}"
-          //  );
-
             yield return new WaitForSeconds(timeBetweenEnemies);
         }
+        onComplete?.Invoke();
     }
 
 }
-//Why are enemies so slow

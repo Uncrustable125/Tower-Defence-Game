@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [Header("Panel Settings")]
-    public RectTransform panel;
+    public RectTransform menuPanel;
     [SerializeField] TextMeshProUGUI gameOverText;
-    [SerializeField] CanvasGroup gameOverCanvasGroup;
+    //[SerializeField] CanvasGroup gameOverCanvasGroup;
     public Vector2 targetSize = new Vector2(600, 400);
     public float popDuration = 0.3f;
     public float overshootMultiplier = 1.2f;
@@ -22,7 +22,10 @@ public class UIManager : MonoBehaviour
     public float canvasFadeDuration = 1f;
 
     [Header("HUD")]
-    [SerializeField] TextMeshProUGUI healthText, goldText, stageText;
+    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] TextMeshProUGUI goldText;
+    [SerializeField] TextMeshProUGUI stageText;
+
 
     public void UpdateLivesAndMoney(int lives, int money)
     {
@@ -41,16 +44,18 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator GameOverSequence()
     {
-        gameOverCanvasGroup.gameObject.SetActive(true);
+        // gameOverCanvasGroup.gameObject.SetActive(true);
+
+        menuPanel.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
         retryButton.gameObject.SetActive(true);
-        
-            
-        panel.sizeDelta = Vector2.zero;
+
+
+        menuPanel.sizeDelta = Vector2.zero;
         retryButton.gameObject.SetActive(false);
 
         yield return StartCoroutine(
-            PopInRect(panel, targetSize, popDuration, overshootMultiplier)
+            PopInRect(menuPanel, targetSize, popDuration, overshootMultiplier)
         );
 
         yield return StartCoroutine(FadeInText(textFadeDuration));
@@ -80,7 +85,7 @@ public class UIManager : MonoBehaviour
         // Grow to overshoot
         while (elapsed < halfDuration)
         {
-            elapsed += Time.deltaTime;
+            elapsed += Time.unscaledDeltaTime;
             float t = elapsed / halfDuration;
             rect.sizeDelta = Vector2.Lerp(Vector2.zero, overshootSize, t);
             yield return null;
@@ -91,7 +96,7 @@ public class UIManager : MonoBehaviour
         // Settle back to final size
         while (elapsed < halfDuration)
         {
-            elapsed += Time.deltaTime;
+            elapsed += Time.unscaledDeltaTime;
             float t = elapsed / halfDuration;
             rect.sizeDelta = Vector2.Lerp(overshootSize, targetSize, t);
             yield return null;
@@ -109,7 +114,7 @@ public class UIManager : MonoBehaviour
         float t = 0f;
         while (t < duration)
         {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             c.a = Mathf.Clamp01(t / duration);
             gameOverText.color = c;
             yield return null;
@@ -119,7 +124,7 @@ public class UIManager : MonoBehaviour
         gameOverText.color = c;
     }
 
-    private IEnumerator FadeInCanvasGroup(float duration)
+    /*private IEnumerator FadeInCanvasGroup(float duration)
     {
         gameOverCanvasGroup.alpha = 0f;
 
@@ -132,5 +137,5 @@ public class UIManager : MonoBehaviour
         }
 
         gameOverCanvasGroup.alpha = 1f;
-    }
+    }*/
 }

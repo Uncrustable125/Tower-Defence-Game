@@ -19,12 +19,6 @@ MonoBehaviour:
       - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
         quantity: 15
         level: 0
-      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
-        quantity: 15
-        level: 1
-      - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
-        quantity: 15
-        level: 2
   - waves:
     - spawns:
       - enemyData: {fileID: 11400000, guid: be25f5825a5a1a44d85e33c35e5351be, type: 2}
